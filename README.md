@@ -31,9 +31,8 @@ A modern **.NET-based Timesheet Application** for tracking work hours, tasks, pr
 | Database          | SQL Server                     | 
 | ORM               | Entity Framework Core          | 
 
+📄 License
+This project is licensed under the MIT License – see the LICENSE file for details.
 
-
-
-   ```bash
-   git clone https://github.com/Saran172/TimeSheet.git
-   cd TimeSheet/Task-1
+Made with 💻 by Saran
+⭐ Feel free to star the repo if you find it useful!
