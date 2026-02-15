@@ -32,7 +32,7 @@ A modern **.NET-based Timesheet Application** for tracking work hours, tasks, pr
 | ORM               | Entity Framework Core          | 
 
 📄 License
-This project is licensed under the MIT License – see the LICENSE file for details.
+This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
 Made with 💻 by Saran
 ⭐ Feel free to star the repo if you find it useful!
