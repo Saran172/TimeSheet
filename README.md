@@ -2,6 +2,9 @@
 
 A modern **.NET-based Timesheet Application** for tracking work hours, tasks, projects, and generating reports.
 
+**Live Demo:** [https://timesheet-111.runasp.net/](https://timesheet-111.runasp.net/)  
+(Hosted on runasp.net – try logging in with Username = User | Password = 123 and you can create users on employees section)
+
 <p align="center">
   <img src="https://img.shields.io/badge/.NET-8.0+-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET">
   <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#">
@@ -24,15 +27,18 @@ A modern **.NET-based Timesheet Application** for tracking work hours, tasks, pr
 
 ## 🛠️ Tech Stack
 
-| Category          | Technology                     | 
+| Category          | Technology                     |
 |-------------------|--------------------------------|
 | Backend           | .NET 8                         |
-| Frontend          | HTML / CSS / JavaScript        | 
-| Database          | SQL Server                     | 
-| ORM               | Entity Framework Core          | 
+| Frontend          | HTML / CSS / JavaScript        |
+| Database          | SQL Server                     |
+| ORM               | Entity Framework Core          |
 
-📄 License
+## 📄 License
+
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
 
-Made with 💻 by Saran
+---
+
+Made with 💻 by Saran  
 ⭐ Feel free to star the repo if you find it useful!
