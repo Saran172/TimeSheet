@@ -2,8 +2,13 @@
 
 A modern **.NET-based Timesheet Application** for tracking work hours, tasks, projects, and generating reports.
 
-**Live Demo:** [https://timesheet-111.runasp.net/](https://timesheet-111.runasp.net/)  
-(Hosted on runasp.net – try logging in with Username = User | Password = 123 and you can create users on employees section)
+**Live Demo:**  
+[![Open TimeSheet](https://img.shields.io/badge/Open%20Live%20Demo-2ea44f?style=for-the-badge&logo=appveyor&logoColor=white)](https://timesheet-111.runasp.net/)
+
+**Test credentials:**  
+Username: `User`  
+Password: `123`  
+*(You can create more users in the Employees section)*
 
 <p align="center">
   <img src="https://img.shields.io/badge/.NET-8.0+-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET">
