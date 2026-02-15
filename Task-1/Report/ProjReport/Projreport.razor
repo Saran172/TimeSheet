@@ -1,0 +1,317 @@
+﻿@page "/projreport"
+@attribute [Authorize(Roles = "manager, Developer")]
+@using System.Data
+@using System.Data.SqlClient
+@using DevExpress.Data.Filtering;
+@using Task_1.Data
+@using Task_1.Entities
+@using Task_1.Model
+@using Task_1.Services
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@inject DataAcces _data
+@inject ProjectService NwindDataService
+@inject CustomerService customerservice
+@inject NavigationManager NavigationManager
+
+@if (isLoading)
+{
+    <div class="rl-loading-container">
+        <div class="loader"></div>
+    </div>
+}
+else
+{
+    <div class="models">
+        <div class="toolbar">
+            <div class="toolbar-group">
+                <div class="grid-toolbar-export">
+                    Export
+                    <div class="export-options">
+                        <button class="btn btn-primary" @onclick="ExportCsvItem_Click">To CSV</button>
+                        <button class="btn btn-primary" @onclick="ExportXlsxItem_Click">To XLSX</button>
+                        <button class="btn btn-primary" @onclick="ExportXlsItem_Click">To XLS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="grid-container">
+
+            <tr>
+                <label for="deOverview" class="demo-text cw-320 mb-1">
+                    So_Date
+                </label>
+                <DxDateEdit @bind-Date="@DateTimeValue"
+                CssClass="cw-320" class="date"
+                InputId="deOverview" />
+                <DxButton Click="@(() => UpdateGrid(DateTimeValue))">Show</DxButton>
+
+                <DxComboBox Data="@customers"
+                TextFieldName="@nameof(Customer.Cust_Name)" NullText="Select Customer.."
+                CssClass="cw-480"
+                InputId="cbOverview"
+                ValueChanged="@((Customer cust)=> LoadCustomer(cust.Cust_Name))">
+                </DxComboBox>@* 
+
+                <DxComboBox Data="@lt_project"
+                            TextFieldName="@nameof(Project.So_Number)" NullText="Select Project.."
+                            CssClass="cw-480"
+                            InputId="cbOverview"
+                            ValueChanged="@((Project proj)=> LoadProject(proj.So_Number))">  
+                </DxComboBox> *@
+
+            </tr>
+            <br />
+
+            <DxGrid @ref="Grid" Data="project"
+            ShowFilterRow="true"
+            ColumnResizeMode="GridColumnResizeMode.NextColumn"
+            PageSize="20">
+                <Columns>
+                    @* <DxGridDataColumn FieldName="PROJ_ID" Caption="Project Id" MinWidth="110" Width="10%" /> *@
+                    <DxGridDataColumn FieldName="SO_NUMBER" Caption="So Number" DisplayFormat="d" SortIndex="0" MinWidth="110" Width="10%" />
+                    <DxGridDataColumn FieldName="SO_DATE" Caption="So Date" DisplayFormat="yyyy-MM-dd" MinWidth="135" Width="10%" />
+                    <DxGridDataColumn FieldName="IsBillable" Caption="Bill Status" Width="10%" TextAlignment="GridTextAlignment.Center"/>
+                    @* <DxGridDataColumn FieldName="CUST_ID" Caption="Customer Id" MinWidth="110" Width="10%" /> *@
+                    <DxGridDataColumn FieldName="CUST_NAME" Caption="Customer Name" MinWidth="110" Width="10%" />
+                    @* <DxGridDataColumn FieldName="PROJECT_NAME" Caption="Project Name" MinWidth="110" Width="10%" /> *@
+                    <DxGridDataColumn FieldName="PROJECT_NAME" Caption="Project Name"  FilterRowOperatorType="GridFilterRowOperatorType.Contains" Width="50%" />
+                    <DxGridDataColumn FieldName="DUEDATE" Caption="Due Date"  DisplayFormat="d" MinWidth="135" Width="10%" />
+                    <DxGridDataColumn FieldName="PROJECT_STATUS" Caption="Project Status" MinWidth="120" />
+                    <DxGridDataColumn FieldName="PROJ_ID" Caption="Action" AllowSort="false" Width="90px" MinWidth="150" TextAlignment="GridTextAlignment.Center">
+
+                        <CellDisplayTemplate>
+                            <a class="btn btn-outline-primary"
+                            @onclick="() => NavigateToProjectDetails(((ProjectDto)context.DataItem))">
+                                Details
+                            </a>
+
+                        </CellDisplayTemplate>
+                    </DxGridDataColumn>
+                    @*                 <EditSettings>
+                    <DxComboBoxSettings Data="GridData" ValueFieldName="Proj_Id" TextFieldName="DisplayText" FilteringMode="DataGridFilteringMode.Contains" />
+                </EditSettings>
+            </DxGridDataColumn> *@@* 
+            <DxGridCommandColumn Width="70px" NewButtonVisible="false" EditButtonVisible="false" DeleteButtonVisible="false" /> *@
+                </Columns>
+            </DxGrid>
+        </div>
+    </div>
+}
+
+<footer class="footer">
+    <p>Project Report</p>
+</footer>
+
+@code {
+    IGrid Grid { get; set; }
+    object GridData { get; set; }
+    const string ExportFileName = "ExportResult";
+    List<ProjectDto> project = new List<ProjectDto>();
+    List<Project> lt_project = new List<Project>();
+    List<Customer> customers = new List<Customer>();
+    Customer cust = new Customer();
+    Project proj = new Project();
+    private bool isLoading = true;
+    // IReadOnlyList<CustomerInfo> Customers { get; set; }
+    protected override async Task OnInitializedAsync() 
+    {   
+        await Task.Delay(500);
+        isLoading = false;
+        // await LoadData(); 
+        await LoadProjCustData();
+        await getcustomername();
+        await getprojects();
+        DateTimeValue = DateTime.Today;
+
+    }
+    record PriceFilterInterval(CriteriaOperator Criteria, string DisplayText) {
+        public PriceFilterInterval(string CriteriaText, string DisplayText)
+            : this(CriteriaOperator.Parse(CriteriaText), DisplayText) {
+        }
+    }
+
+    async Task ExportXlsxItem_Click()
+    {
+        await Grid.ExportToXlsxAsync(ExportFileName);
+    }
+    async Task ExportXlsItem_Click()
+    {
+        await Grid.ExportToXlsAsync(ExportFileName);
+    }
+    async Task ExportCsvItem_Click()
+    {
+        await Grid.ExportToCsvAsync(ExportFileName);
+    }
+    private async Task LoadData()
+    {
+        try
+        {
+            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT * FROM Project";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                DataTable dataTable = new DataTable();
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                {
+                    adapter.Fill(dataTable);
+                }
+                project =  await _data.ConvertToList<ProjectDto>(dataTable);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+    }
+    DateTime DateTimeValue { get; set; }
+    // project.ForEach(d => d.SO_DATE = DateTimeValue);
+    private async Task UpdateGrid(DateTime date)
+    {
+
+
+        try
+        {
+            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT*,b.cust_name FROM Project a inner join customer b on a.cust_code=b.cust_code where SO_DATE =@date";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@date", date);
+                DataTable dataTable = new DataTable();
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                {
+                    adapter.Fill(dataTable);
+                }
+                project = await _data.ConvertToList<ProjectDto>(dataTable);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+
+    }
+
+    private async Task LoadProjCustData()
+    {
+        try
+        {
+            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "Select SO_NUMBER,SO_DATE,Project.CUST_CODE,Customer.CUST_NAME,PROJECT_NAME,DUEDATE,PROJECT_STATUS,IsBillable from Project inner join Customer on Customer.CUST_CODE=Project.CUST_CODE;";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                DataTable dataTable = new DataTable();
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                {
+                    adapter.Fill(dataTable);
+                }
+                project = await _data.ConvertToList<ProjectDto>(dataTable);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+    }
+    private async Task LoadCustomer(string custName)
+    {
+        try
+        {
+            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "Select SO_NUMBER,SO_DATE,Project.CUST_CODE,Customer.CUST_NAME,PROJECT_NAME,DUEDATE,PROJECT_STATUS from Project inner join Customer on Customer.CUST_CODE=Project.CUST_CODE where Customer.CUST_NAME=@custname;";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@custname", custName);
+                DataTable dataTable = new DataTable();
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                {
+                    adapter.Fill(dataTable);
+                }
+                project = await _data.ConvertToList<ProjectDto>(dataTable);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+    }
+    private async Task LoadProject(int sonumber)
+    {
+        try
+        {
+            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "Select SO_NUMBER,SO_DATE,Project.CUST_CODE,Customer.CUST_NAME,PROJECT_NAME,DUEDATE,PROJECT_STATUS from Project inner join Customer on Customer.CUST_CODE=Project.CUST_CODE where SO_NUMBER=@sonumber;";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@sonumber", sonumber);
+                DataTable dataTable = new DataTable();
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                {
+                    adapter.Fill(dataTable);
+                }
+                project = await _data.ConvertToList<ProjectDto>(dataTable);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+    }
+
+    private async Task getcustomername()
+    {
+
+        try
+        {
+
+            customers = await customerservice.GetCustomerEditableAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+    }
+    private async Task getprojects()
+    {
+        try
+        {
+            lt_project = await NwindDataService.GetProjectEditableAsync();
+        }
+        catch(Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+    }
+    private void NavigateToProjectDetails(ProjectDto project)
+    {   
+        try{
+            var encodedCustName = Uri.EscapeDataString(project.CUST_NAME);
+            var encodedProjName = Uri.EscapeDataString(project.PROJECT_NAME);
+
+            NavigationManager.NavigateTo($"/projectdetails?custName={encodedCustName}&projName={encodedProjName}");
+        }
+        catch(Exception ex){
+            Console.WriteLine(ex);
+        }
+    }
+}

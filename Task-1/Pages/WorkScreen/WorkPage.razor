@@ -1,0 +1,416 @@
+﻿@page "/wor"
+@attribute [Authorize(Roles = "employee, Developer")]
+@using System.Globalization
+@using Microsoft.EntityFrameworkCore
+@using Syncfusion.Blazor.Calendars
+@using Task_1.Authentication
+@using Task_1.DbCon
+@using Task_1.Model
+@using Task_1.Services
+@inject IDbContextFactory<CustomerDbContext> DbFactory
+@inject CustomerService custserverice
+@inject ProjectService projectservice
+@inject WorkService workservice
+@* @inject CustomerDbContext _context *@
+@inject DataAcces _data
+@inject Blazored.SessionStorage.ISessionStorageService SessionStorage
+@inject IJSRuntime JSRuntime
+@inject EditStateService EditStateService
+@inject NavigationManager navigation
+@inject CustomAuthenticationStateProvider CustomAuthenticationStateProvider
+
+@if (isLoading)
+{
+    <div class="rl-loading-container">
+        <div class="loader"></div>
+    </div>
+}
+else
+{
+    <div class="model">
+
+        <div style="display: flex; justify-content: space-between;">
+            <div class="toolbar" style="display: flex; gap: 10px">
+
+                <button class="addworkbtn-lg" style="background: linear-gradient(to left, #000000, #104355); color: white; font-weight: 600;" data-bs-toggle="modal" data-bs-target="#exampleModal" @onclick="AddModel">Add Work</button>
+                <button class="btn btn-outline-primary addworkbtn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" @onclick="AddModel"><img src="/NewFolder/addition.png" /></button>
+
+
+
+                <div>
+                    <label for="deOverview" class="demo-text cw-320 mb-1">From</label>
+                    <DxDateEdit @bind-Date="@DateTimeValue" CssClass="cw-320" class="date" InputId="deOverview" />
+
+                    <label for="deOverview" class="demo-text cw-320 mb-1">To</label>
+                    <DxDateEdit @bind-Date="@DateTimeValue1" CssClass="cw-320" class="date" InputId="deOverview" />
+                </div>
+
+                <button style="background: linear-gradient(to left, #000000, #104355); color: white; font-weight: 600; box-shadow: 10px" @onclick="@(() => UpdateGrid(DateTimeValue, DateTimeValue1))">Show</button>
+
+
+                @if (isEmployee)
+                {
+                    <button type="button" style="btn btn-dark" @onclick="ToggleEditability">
+                        @if (EditStateService.IsEditable)
+                        {
+                            <a>No</a>
+                        }
+                        else
+                        {
+                            <a>Yes</a>
+                        }
+                    </button>
+
+                }
+
+            </div>
+            <div class="toolbar-group">
+                <div class="grid-toolbar-export">
+                    <div @onclick="ExportXlsxItem_Click" title="Export" class="export-options">
+                        <svg style="width: 25px; height: 25px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier"> <path fill="#000000" fill-rule="evenodd" d="M14,9.00421 C14.5523,9.00421 15,9.45192 15,10.00418 L15,13.00418 C15,14.10878 14.1046,15.00418 13,15.00418 L3,15.00418 C1.89543,15.00418 1,14.10878 1,13.00418 L1,10.00418 C1,9.45192 1.44772,9.00421 2,9.00421 C2.55228,9.00421 3,9.45192 3,10.00418 L3,13.00418 L13,13.00418 L13,10.00418 C13,9.45192 13.4477,9.00421 14,9.00421 Z M8,1.59 L11.7071,5.2971 C12.0976,5.68763 12.0976,6.32079 11.7071,6.71132 C11.3166,7.10184 10.6834,7.10184 10.2929,6.71132 L9,5.41842 L9,10.00418 C9,10.55648 8.55228,11.00418 8,11.00418 C7.44772,11.00418 7,10.55648 7,10.00418 L7,5.41842 L5.70711,6.71132 C5.31658,7.10184 4.68342,7.10184 4.29289,6.71132 C3.90237,6.32079 3.90237,5.68763 4.29289,5.2971 L8,1.59 Z"></path> </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <DxGrid @ref="Grid"
+                Data="Data"
+                PageSize="20"
+                ShowSearchBox="true"
+                CustomizeElement="Grid_CustomizeElement"
+                KeyboardNavigationEnabled="Params.KeyboardNavigationEnabled">
+            <Columns>
+                <DxGridDataColumn FieldName="Work_Date" Caption="Work Date" Width="5%" MinWidth="30" DisplayFormat="yyyy-MM-dd" />
+                <DxGridDataColumn FieldName="Ticket_Number" Caption="Ticket Number" MinWidth="50" />
+                <DxGridDataColumn FieldName="Emp_Name" Caption="Employee Name" MinWidth="50" />
+                <DxGridDataColumn FieldName="Cust_Name" Caption="Customer" MinWidth="50" />
+                <DxGridDataColumn FieldName="Proj_Name" Caption="Project" MinWidth="50" />
+                <DxGridDataColumn FieldName="Work_Descriptions" Caption="Description" MinWidth="50" />
+                <DxGridDataColumn FieldName="Start_Time" Caption="Start Time" Width="8%" MinWidth="50" DisplayFormat="HH:mm:ss" />
+                <DxGridDataColumn FieldName="End_Time" Caption="End Time" Width="8%" MinWidth="50" DisplayFormat="HH:mm:ss" />
+                <DxGridDataColumn FieldName="Total_Hours" Caption="Total Minutes" Width="5%" MinWidth="50" />
+                <DxGridDataColumn FieldName="Manager_Approval" Caption="Status" Width="5%" MinWidth="50" />
+                <DxGridDataColumn FieldName="Work_Id" Caption="Action" AllowSort="false" width="90px" MinWidth="150" TextAlignment="GridTextAlignment.Center">
+
+                    <CellDisplayTemplate>
+                        <button class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal1" @onclick="() => EditModel((int)context.Value)">Edit</button>
+                    </CellDisplayTemplate>
+                </DxGridDataColumn>
+
+            </Columns>
+        </DxGrid>
+    </div>
+}
+
+
+<div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Work</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="col-12">
+                <div class="card modal-body">
+
+
+                    <div class="row resinput-field">
+                        <div class="mb-3 col">
+                            <label class="col-form-label">Work Date:<span style="color: red">*</span></label>
+                            <input type="date" class="form-control" @bind-value=work.Work_Date readonly="@(!EditStateService.IsEditable)" />
+                        </div>
+                        <div class="mb-3 col">
+                            <label class="col-form-label">Employee Name:</label>
+                            <input type="text" class="form-control" @bind-value=work.Emp_Name readonly />
+                        </div>
+                    </div>
+
+                    @* <div class="row resinput-field">
+                        <div class="mb-3 col">
+                            <label class="col-form-label">Select Work Type:<span style="color: red">*</span></label>
+                            <input type="radio" id="project" value="PROJECT">
+                            <label for="project">Project</label><br>
+                            <input type="radio" id="ticket" value="TICKET">
+                            <label for="ticket">Ticket</label>
+                        </div>
+                    </div> *@
+
+
+                    <div class="card" style="display:flex; justify-content: center; padding: 5px 5px;flex-direction: row;">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input"
+                                   type="radio"
+                                   name="option1"
+                                   id="radio1"
+                                   value="Project"
+                                   checked="@((selectedOption == "Project"))"
+                                   @onchange="(e) => OnOptionChanged(e.Value.ToString())" />
+                            <label class="form-check-label" for="radio1">
+                                Project
+                            </label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input"
+                                   type="radio"
+                                   name="option1"
+                                   id="radio2"
+                                   value="Ticket"
+                                   checked="@((selectedOption == "Ticket"))"
+                                   @onchange="(e) => OnOptionChanged(e.Value.ToString())" />
+                            <label class="form-check-label" for="radio2">
+                                Ticket
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input"
+                                   type="radio"
+                                   name="option1"
+                                   id="radio5"
+                                   value="Learning"
+                                   checked="@((selectedOption == "Learning"))"
+                                   @onchange="(e) => OnOptionChanged(e.Value.ToString())" />
+                            <label class="form-check-label" for="radio5">
+                                Learning
+                            </label>
+                        </div>
+                    </div>
+                    @if (selectedOption != "Learning")
+                    {
+                        <div class="row resinput-field">
+
+                            <div class="mb-3 col">
+                                <label class="col-form-label">Customer Name:<span style="color: red">*</span></label>
+                                <Select id="customer" value="@work.Cust_Name" @onchange="OnCustomerChanged" class="form-control">
+                                    <option value="">---select---</option>
+                                    @foreach (var cust in lt_custumer)
+                                    {
+                                        <option value="@cust.Cust_Name">@cust.Cust_Code - @cust.Cust_Name</option>
+                                    }
+                                </Select>
+                            </div>
+                            @if (selectedOption == "Ticket")
+                            {
+                                <div class="mb-3 col">
+                                    <label class="col-form-label">Ticket Number:<span style="color: red">*</span></label>
+                                    <input type="text" class="form-control" @bind-value="work.Ticket_Number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" />
+                                </div>
+                            }
+                            else
+                            {
+
+                                <div class="mb-3 col">
+                                    <label class="col-form-label">Project Name:<span style="color: red">*</span></label>
+                                    <InputSelect id="project" @bind-Value="work.Proj_Name" class="form-control">
+                                        <option value="">---select---</option>
+                                        @foreach (var proj in filteredProjects)
+                                        {
+                                            <option value="@proj.Project_Name">@proj.So_Number - @proj.Project_Name</option>
+                                        }
+                                    </InputSelect>
+                                </div>
+                            }
+
+                        </div>
+                    }
+
+                    <div class="row">
+
+                        <div class="mb-3 col">
+                            <label class="col-form-label">Work Description:<span style="color: red">*</span></label>
+                            <textarea class="form-control" @bind="work.Work_Descriptions"></textarea>
+                            <small class="text-muted d-md-none" style="font-size:12px">
+                                💡 Tip: On mobile? Use the 🎤 on your keyboard to speak your input!
+                            </small>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex resinput-field">
+                        <div class="d-flex">
+                            <div class="">
+                                <div class="time-picker">
+                                    <label class="col-form-label">Start Time <span style="color: red">*</span></label>
+                                    <input type="time" value="@work.Start_Time.ToString("HH:mm")" @onchange="AddStartTime" />
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-picker">
+                                    <label class="col-form-label">End Time <span style="color: red">*</span></label>
+                                    <input type="time" value="@work.End_Time.ToString("HH:mm")" @onchange="AddEndTime" min="@timeggg" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="time-picker">
+                                <label class="col-form-label">Total Time (In Minutes)</label>
+                                <input type="text" class="timecoo" readonly value="@work.Total_Hours" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary closebtn" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+
+                    <button type="button" class="btn btn-primary savebtn" data-bs-dismiss="modal" @onclick=SaveWork><i class="bi bi-check-lg"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModal1" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="exampleModalLabel">Edit Work </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="col-12">
+                <div class="card modal-body">
+
+                    <div class="row resinput-field">
+                        <div class="mb-3 col">
+                            <label class="col-form-label">Work Date:</label>
+                            <input type="date" class="form-control" @bind-value=DateTimeValue readonly="@(!EditStateService.IsEditable)" />
+                        </div>
+                        <div class="mb-3 col">
+                            <label class="col-form-label">Employee Name:</label>
+                            <input type="text" class="form-control" @bind-value=Emp_Name readonly />
+                        </div>
+                    </div>
+
+
+                    <div class="card" style="display:flex; justify-content: center; padding: 5px 5px;flex-direction: row;">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input"
+                                   type="radio"
+                                   name="option"
+                                   id="radio3"
+                                   value="Project"
+                                   checked="@((selectedOption == "Project"))"
+                                   @onchange="(e) => OnOptionChanged(e.Value.ToString())" />
+                            <label class="form-check-label" for="radio3">
+                                Project
+                            </label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input"
+                                   type="radio"
+                                   name="option"
+                                   id="radio4"
+                                   value="Ticket"
+                                   checked="@((selectedOption == "Ticket"))"
+                                   @onchange="(e) => OnOptionChanged(e.Value.ToString())" />
+                            <label class="form-check-label" for="radio4">
+                                Ticket
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input"
+                                   type="radio"
+                                   name="option"
+                                   id="radio6"
+                                   value="Learning"
+                                   checked="@((selectedOption == "Learning"))"
+                                   @onchange="(e) => OnOptionChanged(e.Value.ToString())" />
+                            <label class="form-check-label" for="radio6">
+                                Learning
+                            </label>
+                        </div>
+                    </div>
+
+                    @if (selectedOption != "Learning")
+                    {
+                        <div class="row resinput-field">
+                            <div class="mb-3 col">
+                                <label class="col-form-label">Customer Name:<span style="color: red">*</span></label>
+                                <Select id="customer" value="@Cust_Name" @onchange="OnCustomerChanged" class="form-control">
+                                    <option value="">---select---</option>
+                                    @foreach (var cust in lt_custumer)
+                                    {
+                                        <option value="@cust.Cust_Name">@cust.Cust_Code - @cust.Cust_Name</option>
+                                    }
+                                </Select>
+                            </div>
+                            @if (selectedOption == "Ticket")
+                            {
+                                <div class="mb-3 col">
+                                    <label class="col-form-label">Ticket Number:<span style="color: red">*</span></label>
+                                    <input type="text" class="form-control" @bind-value="Ticket_Number" oninput="this.value=this.value.replace(/[^0-9]/g,'')" />
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="mb-3 col">
+                                    <label class="col-form-label">Project Name:<span style="color: red">*</span></label>
+                                    @* <input type="number" class="form-control" @bind-value=work.Proj_Id /> *@
+                                    <select id="project" value="@Proj_Name" @onchange="OnProjectChanged" class="form-control">
+                                        <option value="">---select---</option>
+                                        @foreach (var proj in filteredProjects)
+                                        {
+                                            <option value="@proj.Project_Name">@proj.Project_Name - @proj.So_Number</option>
+                                        }
+                                    </select>
+                                </div>
+                            }
+
+                        </div>
+                    }
+
+                    <div class="row">
+                        <div class="mb-3 col">
+                            <label class="col-form-label">Work Description:<span style="color: red">*</span></label>
+                            <textarea class="form-control" @bind="Work_Descriptions"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="d-flex resinput-field">
+                        <div class="d-flex">
+                            <div class="">
+                                <div class="time-picker">
+                                    <label class="col-form-label">Start Time: <span style="color: red">*</span></label>
+                                    <input type="time" value="@Start_Time.ToString("HH:mm")" @onchange="UpdateStartTime" />
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-picker">
+                                    <label class="col-form-label">End Time :<span style="color: red">*</span></label>
+                                    <input type="time" value="@End_Time.ToString("HH:mm")" @onchange="UpdateEndTime" min="@timeggg" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="">
+                            <div class="time-picker">
+                                <label class="col-form-label">Total Time (In Minutes)</label>
+                                <input type="text" class="timecoo" readonly value="@Total_Hours" />
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary closebtn" data-bs-dismiss="modal"><i class="bi bi-x-lg"></i></button>
+                    <button type="button" class="btn btn-primary savebtn" data-bs-dismiss="modal" @onclick="UpdateWork"><i class="bi bi-check-lg"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="footer">
+    <p>Works</p>
+</footer>

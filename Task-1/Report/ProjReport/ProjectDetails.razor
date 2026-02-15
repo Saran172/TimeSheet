@@ -1,0 +1,166 @@
+﻿@page "/projectdetails"
+@using Task_1.Entities
+@attribute [Authorize(Roles = "manager, Developer")]
+
+<div class="models">
+    <div class="toolbar">
+        <div class="toolbar-group">
+            <div class="grid-toolbar-export">
+                Export
+                <div class="export-options">
+                    <button class="btn btn-primary" @onclick="ExportCsvItem_Click">To CSV</button>
+                    <button class="btn btn-primary" @onclick="ExportXlsxItem_Click">To XLSX</button>
+                    <button class="btn btn-primary" @onclick="ExportXlsItem_Click">To XLS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="grid-container">
+        <label for="deOverview" class="demo-text cw-320 mb-1">
+            Work Date :
+        </label>
+        <label for="deOverview" class="demo-text cw-320 mb-1">From</label>
+        <DxDateEdit @bind-Date="@DateTimeStart"
+                    CssClass="cw-320" class="date"
+                    InputId="deOverview" />
+        <label for ="deOverview" class="demo-text cw-320 mb-1">To</label>
+        <DxDateEdit @bind-Date="@DateTimeEnd"
+                    CssClass="cw-320" class="date"
+                    InputId="deOverview" />
+        <DxButton Click="@(() => UpdateGrid(DateTimeStart,DateTimeEnd))">Update Grid</DxButton>
+        <hr />
+        <DxGrid @ref="Grid" Data="work"
+        ColumnResizeMode="GridColumnResizeMode.NextColumn">
+        <Columns>
+                <DxGridDataColumn FieldName="WORK_DATE" Caption="Work Date" Width="140px" />
+                <DxGridDataColumn FieldName="EMP_NAME" Caption="Employee Name" MinWidth="50" />
+                <DxGridDataColumn FieldName="CUST_NAME" Caption="Customer Name" Width="130px">
+            </DxGridDataColumn>
+                <DxGridDataColumn FieldName="PROJ_NAME" Caption="Project Name" Width="130px">
+            </DxGridDataColumn>
+                <DxGridDataColumn FieldName="WORK_DESCRIPTIONS" Caption="Description" MinWidth="100" />
+                <DxGridDataColumn FieldName="START_TIME" Caption="Start Time" Width="8%" MinWidth="50" DisplayFormat="HH:mm:ss" />
+                <DxGridDataColumn FieldName="END_TIME" Caption="End Time" Width="8%" MinWidth="50" DisplayFormat="HH:mm:ss" />
+                <DxGridDataColumn FieldName="TOTAL_HOURS" Caption="Total Minutes" Width="5%" MinWidth="50" DisplayFormat="HH:mm:ss" />
+
+
+                <DxGridDataColumn FieldName="MANAGER_NAME" Caption="Manager Name" MinWidth="50" />
+                <DxGridDataColumn FieldName="MANAGER_APPROVAL" Caption="Manager Approval" MinWidth="50" />
+                <DxGridDataColumn FieldName="Comment" Caption="Manager Remarks" MinWidth="50" />
+        </Columns>
+    </DxGrid>
+</div>
+
+</div>
+
+<footer class="footer">
+    <p>Project Details</p>
+</footer>
+
+@code {
+    IGrid Grid;
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string custName { get; set; }
+
+    [Parameter]
+    [SupplyParameterFromQuery]
+    public string projName { get; set; }
+    object GridData { get; set; }
+    const string ExportFileName = "ExportResult";
+    List<Prodetaildto> work = new List<Prodetaildto>();
+    List<Project> lt_project = new List<Project>();
+
+    DateTime DateTimeValue { get; set; }
+    DateTime DateTimeStart { get; set; } 
+    DateTime DateTimeEnd { get; set; } 
+
+
+    protected override async Task OnInitializedAsync() 
+    {
+        await getdata();
+        DateTimeStart = DateTime.Today.AddDays(-1);
+        DateTimeEnd = DateTime.Today;
+        await UpdateGrid(DateTimeStart, DateTimeEnd);
+    }
+    async Task ExportXlsxItem_Click()
+    {
+        await Grid.ExportToXlsxAsync(ExportFileName);
+    }
+    async Task ExportXlsItem_Click()
+    {
+        await Grid.ExportToXlsAsync(ExportFileName);
+    }
+    async Task ExportCsvItem_Click()
+    {
+        await Grid.ExportToCsvAsync(ExportFileName);
+    }
+
+    private async Task getdata()
+    {
+        try
+        {
+            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "SELECT * FROM Work where Cust_Name =@custName AND Proj_Name =@projName";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@custName", custName);
+                command.Parameters.AddWithValue("@projName", projName);
+                DataTable dataTable = new DataTable();
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                {
+                    adapter.Fill(dataTable);
+                }
+                work = await _data.ConvertToList<Prodetaildto>(dataTable);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+
+    }
+
+    private async Task UpdateGrid(DateTime date1, DateTime date2)
+    {
+
+
+        try
+        {
+            string connectionString = Configuration.GetConnectionString("DefaultConnection");
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                // string query = "SELECT * FROM Work where WORK_DATE BETWEEN CONVERT(DATE, @date1, 120) AND CONVERT(DATE, @date2, 120)  and Cust_Name=@custName AND Proj_Name=@projName";
+
+                string query = "SELECT * FROM Work WHERE WORK_DATE BETWEEN @date1 AND @date2 AND Cust_Name = @custName AND Proj_Name = @projName";
+
+
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@date1", date1);
+                command.Parameters.AddWithValue("@date2", date2);
+                command.Parameters.AddWithValue("@custName", custName);
+                command.Parameters.AddWithValue("@projName", projName);
+                DataTable dataTable = new DataTable();
+
+                using (SqlDataAdapter adapter = new SqlDataAdapter(command))
+                {
+                    adapter.Fill(dataTable);
+                }
+                work = await _data.ConvertToList<Prodetaildto>(dataTable);
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("Error: " + ex.Message);
+        }
+
+    }
+
+}

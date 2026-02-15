@@ -1,0 +1,1012 @@
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\appsettings.Development.json
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\appsettings.json
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Task-1.staticwebassets.runtime.json
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Task-1.exe
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Task-1.deps.json
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Task-1.runtimeconfig.json
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Task-1.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Task-1.pdb
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Azure.Core.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Azure.Identity.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\BlazorBootstrap.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Blazored.LocalStorage.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Blazored.SessionStorage.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Blazored.Toast.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\DevExpress.Blazor.v22.2.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\DevExpress.Data.v22.2.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\DevExpress.Drawing.v22.2.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\DevExpress.Pdf.v22.2.Core.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\DevExpress.Pdf.v22.2.Drawing.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\DevExpress.Printing.v22.2.Core.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\DevExtreme.AspNet.Data.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Humanizer.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Authorization.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Components.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Components.Forms.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Components.Web.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Metadata.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.Build.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.Build.Framework.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Features.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Razor.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.DiaSymReader.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.Identity.Client.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.JSInterop.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.NET.StringTools.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\dotnet-aspnet-codegenerator-design.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Mono.TextTemplating.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Newtonsoft.Json.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\NuGet.Common.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\NuGet.Configuration.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\NuGet.DependencyResolver.Core.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\NuGet.Frameworks.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\NuGet.LibraryModel.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\NuGet.Packaging.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\NuGet.ProjectModel.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\NuGet.Protocol.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\NuGet.Versioning.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Buttons.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Calendars.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Core.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Data.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.DropDowns.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Grids.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Inputs.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Lists.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Navigations.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Notifications.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Popups.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Spinner.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Blazor.SplitButtons.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.ExcelExport.Net.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.Licensing.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\Syncfusion.PdfExport.Net.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.CodeDom.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Composition.AttributedModel.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Composition.Convention.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Composition.Hosting.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Composition.Runtime.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Composition.TypedParts.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Data.SqlClient.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Drawing.Common.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Memory.Data.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Private.ServiceModel.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Reactive.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Reflection.MetadataLoadContext.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Runtime.Caching.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Security.Permissions.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.ServiceModel.Http.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.ServiceModel.Primitives.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.ServiceModel.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Text.Encodings.Web.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Text.Json.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\System.Windows.Extensions.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\af\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ar\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\az\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\bg\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\bn-BD\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\cs\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\da\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\de\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\el\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\es\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fa\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fi-FI\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fr\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fr-BE\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\he\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\hr\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\hu\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\hy\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\id\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\is\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\it\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ja\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ko-KR\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ku\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\lv\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ms-MY\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\mt\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\nb\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\nb-NO\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\nl\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pl\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pt\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ro\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ru\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\sk\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\sl\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\sr\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\sr-Latn\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\sv\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\th-TH\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\tr\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\uk\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\vi\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-CN\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hans\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hant\Humanizer.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\cs\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\de\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\es\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\fr\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\it\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ja\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ko\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pl\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\pt-BR\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\ru\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\tr\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hans\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\zh-Hant\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win-arm64\native\sni.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win-x64\native\sni.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win-x86\native\sni.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\BUSON\Task219\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.csproj.AssemblyReference.cache
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.GeneratedMSBuildEditorConfig.editorconfig
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.AssemblyInfoInputs.cache
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.AssemblyInfo.cs
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.csproj.CoreCompileInputs.cache
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.MvcApplicationPartsAssemblyInfo.cache
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.RazorAssemblyInfo.cache
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.RazorAssemblyInfo.cs
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\staticwebassets.build.json
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\staticwebassets.development.json
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\staticwebassets\msbuild.Task-1.Microsoft.AspNetCore.StaticWebAssets.props
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\staticwebassets\msbuild.build.Task-1.props
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Task-1.props
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Task-1.props
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\staticwebassets.pack.json
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\App.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Pages\CustomerScreen\CustomerPage.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Pages\Dashboard\Dashboard.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Pages\EmployeeScreen\EmployeeMaster.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Pages\LoginScreen\LoginPage.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Pages\ManagerApproval\ManagerApprovalPage.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Pages\ProjectScreen\ProjectPage.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Pages\WorkScreen\PendingApproval.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Pages\WorkScreen\WorkPage.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Report\CustReport\CustomerReport.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Report\DepartmentReport\DepartmentReport.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Report\EmployeeReport\EmployeeReport.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Report\EmployeeReport\WorkDetails.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Report\ManagerReport\ManagerReport.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Report\ProjReport\Projreport.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Report\WorkApproval\WorkApproval.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\bundle\Task-1.styles.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\projectbundle\Task-1.bundle.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.csproj.Up2Date
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.dll
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\refint\Task-1.dll
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.pdb
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\Task-1.genruntimeconfig.cache
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\ref\Task-1.dll
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Pages\Index.razor.rz.scp.css
+D:\BUSON\Task219\Task-1\obj\Release\net7.0\scopedcss\Report\DailySheet Report\DailySheet.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\appsettings.Development.json
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\appsettings.json
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.staticwebassets.runtime.json
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.exe
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.deps.json
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.runtimeconfig.json
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.pdb
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Azure.Core.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Azure.Identity.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\BlazorBootstrap.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Blazored.LocalStorage.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Blazored.SessionStorage.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Blazored.Toast.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Blazor.v22.2.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Data.v22.2.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Drawing.v22.2.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Pdf.v22.2.Core.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Pdf.v22.2.Drawing.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Printing.v22.2.Core.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExtreme.AspNet.Data.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Humanizer.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Authorization.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Components.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Components.Forms.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Components.Web.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Metadata.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Build.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Build.Framework.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Features.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Razor.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.DiaSymReader.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Identity.Client.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.JSInterop.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.NET.StringTools.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\dotnet-aspnet-codegenerator-design.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Mono.TextTemplating.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Newtonsoft.Json.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Common.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Configuration.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.DependencyResolver.Core.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Frameworks.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.LibraryModel.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Packaging.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.ProjectModel.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Protocol.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Versioning.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Buttons.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Calendars.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Core.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Data.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.DropDowns.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Grids.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Inputs.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Lists.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Navigations.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Notifications.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Popups.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Spinner.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.SplitButtons.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.ExcelExport.Net.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Licensing.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.PdfExport.Net.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.CodeDom.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Composition.AttributedModel.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Composition.Convention.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Composition.Hosting.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Composition.Runtime.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Composition.TypedParts.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Data.SqlClient.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Drawing.Common.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Memory.Data.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Private.ServiceModel.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Reactive.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Reflection.MetadataLoadContext.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Runtime.Caching.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Security.Permissions.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.ServiceModel.Http.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.ServiceModel.Primitives.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.ServiceModel.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Text.Encodings.Web.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Text.Json.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Windows.Extensions.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\af\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ar\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\az\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\bg\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\bn-BD\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\da\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\el\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fa\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fi-FI\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fr-BE\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\he\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\hr\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\hu\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\hy\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\id\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\is\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ko-KR\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ku\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\lv\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ms-MY\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\mt\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\nb\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\nb-NO\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\nl\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pt\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ro\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\sk\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\sl\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\sr\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\sr-Latn\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\sv\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\th-TH\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\uk\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\vi\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-CN\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Humanizer.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\de\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\es\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\it\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\System.Private.ServiceModel.resources.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-arm64\native\sni.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-x64\native\sni.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-x86\native\sni.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\BUSON\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.csproj.AssemblyReference.cache
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.GeneratedMSBuildEditorConfig.editorconfig
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.AssemblyInfoInputs.cache
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.AssemblyInfo.cs
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.csproj.CoreCompileInputs.cache
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.MvcApplicationPartsAssemblyInfo.cache
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.RazorAssemblyInfo.cache
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.RazorAssemblyInfo.cs
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets.build.json
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets.development.json
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets\msbuild.Task-1.Microsoft.AspNetCore.StaticWebAssets.props
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets\msbuild.build.Task-1.props
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Task-1.props
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Task-1.props
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets.pack.json
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\App.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\CustomerScreen\CustomerPage.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\Dashboard\Dashboard.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\EmployeeScreen\EmployeeMaster.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\Index.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\LoginScreen\LoginPage.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\ManagerApproval\ManagerApprovalPage.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\ProjectScreen\ProjectPage.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\WorkScreen\PendingApproval.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\WorkScreen\WorkPage.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\CustReport\CustomerReport.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\DailySheet Report\DailySheet.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\DepartmentReport\DepartmentReport.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\EmployeeReport\EmployeeReport.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\EmployeeReport\WorkDetails.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\ManagerReport\ManagerReport.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\ProjReport\Projreport.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\WorkApproval\WorkApproval.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\bundle\Task-1.styles.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\projectbundle\Task-1.bundle.scp.css
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.csproj.Up2Date
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.dll
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\refint\Task-1.dll
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.pdb
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.genruntimeconfig.cache
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\ref\Task-1.dll
+D:\BUSON\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\ProjReport\ProjectDetails.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\appsettings.Development.json
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\appsettings.json
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.staticwebassets.runtime.json
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.exe
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.deps.json
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.runtimeconfig.json
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.pdb
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Azure.Core.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Azure.Identity.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\BlazorBootstrap.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Blazored.LocalStorage.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Blazored.SessionStorage.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Blazored.Toast.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Blazor.v22.2.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Data.v22.2.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Drawing.v22.2.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Pdf.v22.2.Core.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Pdf.v22.2.Drawing.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExpress.Printing.v22.2.Core.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\DevExtreme.AspNet.Data.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Humanizer.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Authorization.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Components.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Components.Forms.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Components.Web.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Metadata.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Build.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Build.Framework.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Features.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Razor.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Data.SqlClient.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.DiaSymReader.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Extensions.Options.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Identity.Client.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.JSInterop.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.NET.StringTools.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.SqlServer.Server.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\dotnet-aspnet-codegenerator-design.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Mono.TextTemplating.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Newtonsoft.Json.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Common.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Configuration.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.DependencyResolver.Core.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Frameworks.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.LibraryModel.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Packaging.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.ProjectModel.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Protocol.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\NuGet.Versioning.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Buttons.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Calendars.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Core.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Data.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.DropDowns.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Grids.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Inputs.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Lists.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Navigations.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Notifications.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Popups.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.Spinner.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Blazor.SplitButtons.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.ExcelExport.Net.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.Licensing.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Syncfusion.PdfExport.Net.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.CodeDom.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Composition.AttributedModel.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Composition.Convention.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Composition.Hosting.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Composition.Runtime.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Composition.TypedParts.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Configuration.ConfigurationManager.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Data.SqlClient.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Drawing.Common.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Memory.Data.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Private.ServiceModel.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Reactive.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Reflection.MetadataLoadContext.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Runtime.Caching.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Security.Permissions.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.ServiceModel.Http.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.ServiceModel.Primitives.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.ServiceModel.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Text.Encodings.Web.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Text.Json.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\System.Windows.Extensions.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\af\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ar\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\az\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\bg\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\bn-BD\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\da\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\el\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fa\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fi-FI\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fr-BE\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\he\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\hr\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\hu\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\hy\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\id\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\is\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ko-KR\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ku\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\lv\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ms-MY\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\mt\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\nb\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\nb-NO\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\nl\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pt\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ro\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\sk\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\sl\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\sr\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\sr-Latn\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\sv\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\th-TH\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\uk\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\vi\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-CN\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Humanizer.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\cs\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\de\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\es\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\fr\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\it\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ja\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ko\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pl\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\pt-BR\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\ru\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\tr\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hans\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\zh-Hant\System.Private.ServiceModel.resources.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-arm64\native\sni.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-x64\native\sni.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win-x86\native\sni.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.csproj.AssemblyReference.cache
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.GeneratedMSBuildEditorConfig.editorconfig
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.AssemblyInfoInputs.cache
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.AssemblyInfo.cs
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.csproj.CoreCompileInputs.cache
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.MvcApplicationPartsAssemblyInfo.cache
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.RazorAssemblyInfo.cache
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.RazorAssemblyInfo.cs
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.sourcelink.json
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets.build.json
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets.development.json
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets\msbuild.Task-1.Microsoft.AspNetCore.StaticWebAssets.props
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets\msbuild.build.Task-1.props
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets\msbuild.buildMultiTargeting.Task-1.props
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets\msbuild.buildTransitive.Task-1.props
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets.pack.json
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\App.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\CustomerScreen\CustomerPage.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\Dashboard\Dashboard.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\EmployeeScreen\EmployeeMaster.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\Index.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\LoginScreen\LoginPage.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\ManagerApproval\ManagerApprovalPage.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\ProjectScreen\ProjectPage.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\WorkScreen\PendingApproval.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Pages\WorkScreen\WorkPage.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\CustReport\CustomerReport.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\DailySheet Report\DailySheet.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\DepartmentReport\DepartmentReport.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\EmployeeReport\EmployeeReport.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\EmployeeReport\WorkDetails.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\ManagerReport\ManagerReport.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\ProjReport\ProjectDetails.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\ProjReport\Projreport.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Report\WorkApproval\WorkApproval.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\bundle\Task-1.styles.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\scopedcss\projectbundle\Task-1.bundle.scp.css
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.csproj.Up2Date
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\refint\Task-1.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.pdb
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\Task-1.genruntimeconfig.cache
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\ref\Task-1.dll
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\bin\Release\net7.0\Task-1.staticwebassets.endpoints.json
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets.build.endpoints.json
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets\msbuild.Task-1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\BUSON-TimeSheet\Task 312 final(working)\Task-1\obj\Release\net7.0\staticwebassets.upToDateCheck.txt

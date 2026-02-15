@@ -1,0 +1,153 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\Pages\\EmployeeScreen\\EmployeeMaster.razor.js",
+      "PackagePath": "staticwebassets\\Pages\\EmployeeScreen\\EmployeeMaster.razor.js"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\obj\\Release\\net7.0\\scopedcss\\projectbundle\\Task-1.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Task-1.svh56p6cqz.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\1583891316478.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\1583891316478.jpg"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\BUSONFont.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\BUSONFont.jpg"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\BUSON_20250207_105702_0000.png",
+      "PackagePath": "staticwebassets\\NewFolder\\BUSON_20250207_105702_0000.png"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\BusonEdited.png",
+      "PackagePath": "staticwebassets\\NewFolder\\BusonEdited.png"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\Gemini_Generated_Image_943cua943cua943c.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\Gemini_Generated_Image_943cua943cua943c.jpg"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\addition.png",
+      "PackagePath": "staticwebassets\\NewFolder\\addition.png"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\buson1.png",
+      "PackagePath": "staticwebassets\\NewFolder\\buson1.png"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\cat.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\cat.jpg"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\clock.png",
+      "PackagePath": "staticwebassets\\NewFolder\\clock.png"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\file (1).png",
+      "PackagePath": "staticwebassets\\NewFolder\\file (1).png"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\pimage.jpg",
+      "PackagePath": "staticwebassets\\NewFolder\\pimage.jpg"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\NewFolder\\sheet.png",
+      "PackagePath": "staticwebassets\\NewFolder\\sheet.png"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\Yeti\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\Yeti\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\sweetalert2\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\css\\sweetalert2\\sweetalert2.min.css"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\css\\sweetalert2\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\css\\sweetalert2\\sweetalert2.min.js"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\site.js",
+      "PackagePath": "staticwebassets\\site.js"
+    },
+    {
+      "Id": "D:\\BUSON-TimeSheet\\Task 312 final(working)\\Task-1\\wwwroot\\sweet-alerts.init.js",
+      "PackagePath": "staticwebassets\\sweet-alerts.init.js"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.Task-1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.Task-1.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.Task-1.props",
+      "PackagePath": "build\\Task-1.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Task-1.props",
+      "PackagePath": "buildMultiTargeting\\Task-1.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.Task-1.props",
+      "PackagePath": "buildTransitive\\Task-1.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

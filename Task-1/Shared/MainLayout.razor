@@ -1,0 +1,50 @@
+﻿@inherits LayoutComponentBase
+@inject AuthenticationStateProvider authStateProvider
+@inject NavigationManager navManager
+@using Task_1.Authentication
+@using Task_1.Shared
+@inject IJSRuntime JS
+@inject NavigationManager NavigationManager
+
+
+<PageTitle>Timesheet Application</PageTitle>
+
+
+<AuthorizeView>
+    <Authorized>
+        <div class="page">
+            <NavMenu />
+            <GuidedTour />
+        </div>
+    </Authorized>
+</AuthorizeView>
+
+<div>
+    <main>
+       @*  <div class="top-row px-4">
+            <AuthorizeView>
+                <Authorized>
+                    <a @onclick="Logout" href="javascript:void(0)">Logout</a>
+                </Authorized>
+                <NotAuthorized>
+                    <a href="/loginpage">Login</a>
+                </NotAuthorized>
+            </AuthorizeView>
+        </div> *@
+
+        <article class="content px-4">
+            @Body
+
+        </article>
+    </main>
+</div>
+
+@code {
+    private async Task Logout()
+    {
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
+        await customAuthStateProvider.UpdateAuthenticationState(null);
+        navManager.NavigateTo("/", true);
+    }
+    
+}

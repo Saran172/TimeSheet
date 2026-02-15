@@ -1,0 +1,64 @@
+﻿@page "/employeeRep"
+@attribute [Authorize(Roles = "manager, Developer")]
+@using DevExpress.Data.Filtering
+@using System.Data.SqlClient
+@using System.Data
+@using Task_1.Data
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@inject DataAcces _data
+@inject NavigationManager NavigationManager
+@if (isLoading)
+{
+    <div class="rl-loading-container">
+        <div class="loader"></div>
+    </div>
+}
+else
+{
+    <div class="models">
+   
+  
+       
+    <DxGrid @ref="Grid" Data="employees" PageSize="15"
+        ColumnResizeMode="GridColumnResizeMode.NextColumn" TextWrapEnabled="false">
+        <Columns>
+            <DxGridDataColumn FieldName="EMP_ID" MinWidth="100" > 
+            <EditSettings>
+      <DxComboBoxSettings Data="employees" ValueFieldName="EMP_ID"
+          TextFieldName="EMP_ID" />
+           </EditSettings>
+            </DxGridDataColumn>
+               
+            <DxGridDataColumn FieldName="EMP_CODE" Caption="Employee Code" MinWidth="100"/>
+            
+            <DxGridDataColumn FieldName="EMP_NAME" Caption="Employee Name" DisplayFormat="c" Width="10%" />
+            <DxGridDataColumn FieldName="EMP_CONTACTNO" Caption="Contact Number" Width="10%" />
+            <DxGridDataColumn FieldName="EMP_CONTACTMAIL" Caption="Email Address" Width="15%" MinWidth="80" />
+            <DxGridDataColumn FieldName="EMP_DESIGNATION" Caption="Designation" Width="10%" MinWidth="90" />
+            <DxGridDataColumn FieldName="Role" Width="10%" MinWidth="90" />
+            <DxGridDataColumn FieldName="EMP_STATUS" Caption="Status" Width="10%" MinWidth="90" />
+                <DxGridDataColumn FieldName="EMP_ID" Caption="Action" AllowSort="false" Width="90px" MinWidth="150" TextAlignment="GridTextAlignment.Center">
+                
+                     <CellDisplayTemplate>
+                        <a class="btn btn-outline-primary" @onclick="() => NavigateToWorkDetails((int)context.Value)">Details</a>
+                        @* <a href="/employeeRep/@emp.EMP_ID">Details</a> *@
+
+                    </CellDisplayTemplate>
+                </DxGridDataColumn>
+                
+        </Columns>
+       
+    </DxGrid>
+ 
+</div>
+}
+
+<footer class="footer">
+    <p>Employee Report</p>
+</footer>
+
+
+@code {
+    
+   
+}

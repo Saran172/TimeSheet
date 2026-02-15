@@ -1,0 +1,87 @@
+﻿@page "/workre"
+@attribute [Authorize(Roles = "employee, Developer")]
+@using System.Globalization
+@using Microsoft.EntityFrameworkCore
+@using Syncfusion.Blazor.Calendars
+@using Task_1.DbCon
+@using Task_1.Model
+@using Task_1.Services
+@inject ApprovalService approvalservice
+@inject Blazored.SessionStorage.ISessionStorageService SessionStorage
+@inject IJSRuntime JSRuntime
+@inject WorkService workservice
+@inject CustomerDbContext _context
+
+
+
+    @if (isLoading)
+    {
+    <div class="rl-loading-container">
+        <div class="loader"></div>
+    </div>
+    }
+    else
+    {   
+        <div class="models">
+            <DxGrid @ref="Grid"
+                    Data="Data"
+                    PageSize="20"
+                    ShowSearchBox="true"
+                    CustomizeElement="Grid_CustomizeElement"
+                    KeyboardNavigationEnabled="Params.KeyboardNavigationEnabled">
+                <Columns>
+                   
+                <DxGridDataColumn FieldName="Work_Id" Caption="Work id" MinWidth="50" />
+                <DxGridDataColumn FieldName="Emp_Id" Caption="Employee id" MinWidth="50" />
+                <DxGridDataColumn FieldName="Manager_Id" Caption="Manager id" MinWidth="50" />
+                <DxGridDataColumn FieldName="Approval_Status" Caption="Approval Status" MinWidth="50" />
+                <DxGridDataColumn FieldName="Comment" Caption="Comment" MinWidth="50" />
+                <DxGridDataColumn FieldName="Correction" Caption="Changes" MinWidth="50" />
+                 <DxGridDataColumn FieldName="Approval_Date" Caption="Approval Date" MinWidth="50" />
+
+                
+                  
+                 <DxGridDataColumn FieldName="Work_Id" Caption="Action" AllowSort="false" width="100px" MinWidth="260" TextAlignment="GridTextAlignment.Center">
+
+                        <CellDisplayTemplate>
+                            <button class="btn btn-primary btn-sm sty1" data-bs-toggle="modal" data-bs-target="#exampleModal" @onclick="() => PrepareAction((int)context.Value, 1)">Resubmit</button>
+                        </CellDisplayTemplate>
+                    </DxGridDataColumn>
+
+                </Columns>
+            </DxGrid>
+        </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Re-Submission</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Changes:</label>
+                            <textarea class="form-control" id="message-text" @bind="Correction"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick="()=>SubmitAction()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    }
+
+<footer class="footer">
+    <p>Pending Works</p>
+</footer>
+
+@code{
+    
+    
+    }

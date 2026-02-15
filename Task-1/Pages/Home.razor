@@ -1,0 +1,83 @@
+﻿@page "/"
+@using Blazored.LocalStorage
+@using Microsoft.AspNetCore.Identity
+@using Task_1.Authentication
+@using Task_1.DbCon
+@inject EmployeeService employeeeservice
+@inject UserAccountService userAccountService
+@inject IJSRuntime js
+@inject AuthenticationStateProvider authStateProvider
+@inject CustomAuthenticationStateProvider CustomAuthenticationStateProvider
+@inject ILocalStorageService _sessionStorage
+@inject EditStateService EditStateService
+@inject NavigationManager navManager
+@inject CustomerDbContext _customerDbContext
+@inject Blazored.SessionStorage.ISessionStorageService SessionStorage
+
+<AuthorizeView>
+    <Authorized>
+        <MainScreen />
+    </Authorized>
+    <NotAuthorized>
+        <Task_1.Pages.LoginScreen.LoginPage />
+    </NotAuthorized>
+</AuthorizeView>
+
+
+
+
+<script>
+    function showAuthModal(message) {
+    document.getElementById('authModalMessage').innerText = message;
+    var modal = new bootstrap.Modal(document.getElementById('authModal'));
+    modal.show();
+    }
+</script>
+
+
+
+
+
+
+<script>
+    function showMessage(message, type = 'success') {
+    const messageContainer = document.getElementById('messageContainer');
+    messageContainer.innerText = message;
+
+    // Set the color based on message type
+    switch (type) {
+    case 'success':
+    messageContainer.style.backgroundColor = '#d4edda'; /* Light green */
+    messageContainer.style.color = '#155724'; /* Dark green */
+    break;
+    case 'error':
+    messageContainer.style.backgroundColor = '#f8d7da'; /* Light red */
+    messageContainer.style.color = '#721c24'; /* Dark red */
+    break;
+    case 'info':
+    messageContainer.style.backgroundColor = '#d1ecf1'; /* Light blue */
+    messageContainer.style.color = '#0c5460'; /* Dark blue */
+    break;
+    default:
+    messageContainer.style.backgroundColor = '#d4edda'; /* Default to light green */
+    messageContainer.style.color = '#155724'; /* Default to dark green */
+    break;
+    }
+
+    // Show the message container
+    messageContainer.classList.add('show');
+
+    // Hide after 5 seconds
+    setTimeout(() => {
+    messageContainer.classList.remove('show');65
+    }, 5000);
+    }
+
+</script>
+
+
+
+@code {
+
+  
+}

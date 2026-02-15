@@ -1,0 +1,87 @@
+﻿@page "/depart"
+@attribute [Authorize(Roles = "manager, Developer")]
+@using System.Data
+@using System.Data.SqlClient
+@using DevExpress.Data.Filtering
+@using Task_1.Data
+@using Task_1.Entities
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@inject DataAcces _data
+
+@if (isLoading)
+{
+    <div class="rl-loading-container">
+        <div class="loader"></div>
+    </div>
+}
+else
+{
+    <div class="models">
+        <div class="toolbar">
+            <div class="toolbar-group">
+                <div class="grid-toolbar-export">
+                    Export
+                    <div class="export-options">
+                        <button class="btn btn-primary" @onclick="ExportCsvItem_Click">To CSV</button>
+                        <button class="btn btn-primary" @onclick="ExportXlsxItem_Click">To XLSX</button>
+                        <button class="btn btn-primary" @onclick="ExportXlsItem_Click">To XLS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+    <div class="grid-container">
+        <div class="box">
+            <ToolbarTemplate>
+            <div class="cw-480">
+                        <DxTagBox Data="FilteredEmployees" Values="SelectedCategories"
+                    ValuesChanged="(IEnumerable<Employee> values) => TagBox_ValuesChanged(values)"
+                          TextFieldName="EMP_DESIGNATION" NullText="Select category..."
+                    ClearButtonDisplayMode="DataEditorClearButtonDisplayMode.Auto" aria-label="Select category" />
+            </div>
+        </ToolbarTemplate>
+
+        </div>
+        
+       
+    <DxGrid @ref="Grid" Data="employee" PageSize="15"
+        ColumnResizeMode="GridColumnResizeMode.NextColumn" TextWrapEnabled="false">
+        <Columns>
+            <DxGridDataColumn FieldName="EMP_ID" MinWidth="100" > 
+               @*   <EditTemplate>
+                        <select>
+                            @foreach (var emp in employee)
+                            {
+                                <option value="@emp.EMP_ID">@emp.EMP_ID</option>
+                            }
+                        </select>
+            </EditTemplate> *@
+            <EditSettings>
+      <DxComboBoxSettings Data="employee" ValueFieldName="EMP_ID"
+          TextFieldName="EMP_ID" />
+           </EditSettings>
+            </DxGridDataColumn>
+
+                    <DxGridDataColumn FieldName="EMP_CODE" Caption="Employee Code" MinWidth="50" />
+            
+            <DxGridDataColumn FieldName="EMP_NAME" Caption="Employee Name" DisplayFormat="c" Width="20%" />
+            <DxGridDataColumn FieldName="EMP_CONTACTNO" Caption="Contact Number" Width="30%" />
+            <DxGridDataColumn FieldName="EMP_CONTACTMAIL" Caption="Email Address" Width="15%" MinWidth="80" />
+            <DxGridDataColumn FieldName="EMP_DESIGNATION" Caption="Designation" Width="10%" MinWidth="90" />
+            <DxGridDataColumn FieldName="Role" Width="10%" MinWidth="90" />
+            <DxGridDataColumn FieldName="EMP_STATUS" Caption="Status" Width="10%" MinWidth="90" />
+        </Columns>
+       
+    </DxGrid>
+ 
+</div>
+</div>
+}
+
+<footer class="footer">
+    <p>Department Report</p>
+</footer>
+
+@code {
+    
+}

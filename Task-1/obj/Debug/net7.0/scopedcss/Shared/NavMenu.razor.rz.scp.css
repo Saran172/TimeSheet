@@ -1,0 +1,133 @@
+.nav-link[b-p15fluipvz] {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #30118b;
+}
+
+    .nav-link .badge[b-p15fluipvz] {
+        position: absolute;
+        top: -2px;
+        right: -30px;
+        font-weight: bold;
+        
+    }
+
+    .nav-link:hover[b-p15fluipvz] {
+        color: #30118b; 
+    }
+
+.bg-gradient-dark-purple[b-p15fluipvz] {
+    background: linear-gradient(to right, black, #04352b);
+}
+.logout-button[b-p15fluipvz] {
+    color: white;
+    background-color: darkred;
+    border-color: black;
+}
+
+    .logout-button:hover[b-p15fluipvz] {
+        background-color: red;
+        border-color: white;
+    }
+
+.navbar-nav[b-p15fluipvz] {
+    margin-left: auto;
+    margin-bottom: 60%;
+}
+
+.offcanvas-body[b-p15fluipvz] {
+    background: linear-gradient(to left, black, #04352b);
+}
+
+.offcanvas-header[b-p15fluipvz] {
+    background: linear-gradient(to left, black, #117b67);
+}
+
+
+
+
+/*-----------------------------------------------------NewNav--------------------------------------------------------------------------*/
+
+
+.menu-icon[b-p15fluipvz] {
+    width: 1rem;
+    height: 1rem;
+    min-width: 1rem;
+    min-height: 1rem;
+    background-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    background-position: center center;
+    background-color: currentColor;
+    opacity: 0.7;
+}
+
+.menu-icon-home[b-p15fluipvz] {
+    mask-image: url("../images/icons/home.svg");
+    -webkit-mask-image: url("../images/icons/home.svg");
+}
+
+.dxbs-menu .dx-menu-bar.horizontal[b-p15fluipvz] {
+    height: 100% !important;
+    background-color: black !important;
+    color: white !important;
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader[b-p15fluipvz] {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #514b82;
+    animation: l20-1-b-p15fluipvz 0.8s infinite linear alternate, l20-2-b-p15fluipvz 1.6s infinite linear;
+}
+
+@keyframes l20-1-b-p15fluipvz {
+    0% {
+        clip-path: polygon(50% 50%,0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0% )
+    }
+
+    12.5% {
+        clip-path: polygon(50% 50%,0 0, 50% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0% )
+    }
+
+    25% {
+        clip-path: polygon(50% 50%,0 0, 50% 0%, 100% 0%, 100% 100%, 100% 100%, 100% 100% )
+    }
+
+    50% {
+        clip-path: polygon(50% 50%,0 0, 50% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% )
+    }
+
+    62.5% {
+        clip-path: polygon(50% 50%,100% 0, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 0% 100% )
+    }
+
+    75% {
+        clip-path: polygon(50% 50%,100% 100%, 100% 100%, 100% 100%, 100% 100%, 50% 100%, 0% 100% )
+    }
+
+    100% {
+        clip-path: polygon(50% 50%,50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 0% 100% )
+    }
+}
+
+@keyframes l20-2-b-p15fluipvz {
+    0% {
+        transform: scaleY(1) rotate(0deg)
+    }
+
+    49.99% {
+        transform: scaleY(1) rotate(135deg)
+    }
+
+    50% {
+        transform: scaleY(-1) rotate(0deg)
+    }
+
+    100% {
+        transform: scaleY(-1) rotate(-135deg)
+    }
+}

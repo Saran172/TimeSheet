@@ -1,0 +1,235 @@
+﻿@using Task_1.Authentication
+@using Task_1.Entities
+@inject AuthenticationStateProvider authStateProvider
+@inject NavigationManager navManager
+@inject WorkService workservice
+@inject ApprovalService approvalservice
+@inject Blazored.SessionStorage.ISessionStorageService SessionStorage
+@implements IDisposable
+@inject UserCounterService CounterService
+@inject IJSRuntime JS
+
+<div class="card w-100">
+    <div class="card-body p-0">
+
+        <DxMenu Title="TimeSheet"
+                ItemsPosition="ItemPosition.End"
+                CollapseItemsToHamburgerMenu="true"
+                CollapseItemToIconMode="MenuCollapseItemToIconMode.Sequentially"
+                DisplayMode="MenuDisplayMode.Desktop">
+            <Items>
+                <DxMenuItem IconCssClass="@(Ismaximized ? "fa-solid fa-compress topbar-icons" : "fa-solid fa-expand topbar-icons")" Click="ToggleFullScreen" />
+
+                <DxMenuItem Position="ItemPosition.End">
+                    <Template>
+                        <div class="active-users-wrapper">
+                            <div class="active-users-container">
+                                <span class="pulse-dot"></span>
+                                <span class="user-count-text">@CounterService.ActiveUsers Online</span>
+                            </div>
+
+                            <div class="custom-tooltip-box">
+                                <div class="tooltip-header">
+                                    <i class="bi bi-people-fill"></i> ACTIVE SESSIONS
+                                </div>
+                                <div class="tooltip-body">
+                                    @foreach (var user in CounterService.GetUsernamesWithTabCount())
+                                    {
+                                        <div class="tooltip-row">
+                                            <span class="user-name">@user</span>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                    </Template>
+                </DxMenuItem>
+               
+                <DxMenuItem Text="Home" IconCssClass="bi bi-house-fill" NavigateUrl="/" />
+                <AuthorizeView Roles="employee, Developer">
+                    <Authorized>
+                        <DxMenuItem Text="Work" IconCssClass="bi bi-briefcase-fill">
+                            <Items>
+                                <DxMenuItem Text="Time-Sheet Entry" NavigateUrl="/wor" />
+                                <DxMenuItem Text="@PendingApprovalText" NavigateUrl="/workre" />
+                            </Items>
+                        </DxMenuItem>
+                    </Authorized>
+                </AuthorizeView>
+                <AuthorizeView Roles="manager, Developer">
+                    <Authorized>
+                        <DxMenuItem Text="@PendingWorkText" IconCssClass="bi bi-clipboard-check-fill" NavigateUrl="/ManagerApproval" />
+                        <DxMenuItem Text="@PendingHoldText" IconCssClass="bi bi-clipboard-check-fill" NavigateUrl="/workap" />
+                        <DxMenuItem Text="Records" IconCssClass="bi bi-database-fill-add">
+                            <Items>
+                                <DxMenuItem Text="Employees" NavigateUrl="/EmployeeMaster" />
+                                <DxMenuItem Text="Customer" NavigateUrl="/cust" />
+                                <DxMenuItem Text="Project" NavigateUrl="/proj" />
+                            </Items>
+                        </DxMenuItem>
+                        <DxMenuItem Text="Reports" IconCssClass="bi bi-folder-fill">
+                            <Items>
+                                <DxMenuItem Text="DailySheet Report" NavigateUrl="/dailySheet" />
+                                <DxMenuItem Text="Customer Report" NavigateUrl="/custreport" />
+                                <DxMenuItem Text="Project Report" NavigateUrl="/projreport" />
+                                <DxMenuItem Text="Department Report" NavigateUrl="/depart" />
+                                <DxMenuItem Text="Manager Report" NavigateUrl="/manager" />
+                                <DxMenuItem Text="Employee Report" NavigateUrl="/employeeRep" />
+                            </Items>
+                        </DxMenuItem>
+                    </Authorized>
+                </AuthorizeView>
+                <AuthorizeView>
+                    <Authorized>
+                        <DxMenuItem Text="Log out" IconCssClass="bi bi-box-arrow-left" Click="Logout" />
+                    </Authorized>
+                </AuthorizeView>
+            </Items>
+
+        </DxMenu>
+
+    </div>
+</div>
+
+
+<style>
+
+
+    .dxbs-menu .dx-menu-bar.horizontal {
+        height: 100% !important;
+        background-color: black !important;
+        color: white !important;
+    }
+</style>
+
+@code {
+    public string EmpName { get; set; }
+    public int EmployeeID { get; set; }
+    private int pendingWorkCount;
+    private int holdWorkCount;
+
+    private List<WorkApproval> pendingApprovals = new List<WorkApproval>();
+    private int pendingApprovalCount;
+
+
+    private string PendingWorkText => pendingWorkCount > 0 ? $"Pending Approvals ({pendingWorkCount})" : "Pending Approvals";
+    private string PendingApprovalText => pendingApprovalCount > 0 ? $"Pending Works ({pendingApprovalCount})" : "Pending Works";
+    private string PendingHoldText => holdWorkCount > 0 ? $"Work Report ({holdWorkCount})" : "Work Report";
+
+
+    private readonly string _tabId = Guid.NewGuid().ToString();
+    private string _compositeKey = string.Empty;
+    private string _displayUsernames = string.Empty;
+
+    private bool Ismaximized;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            await base.OnInitializedAsync();
+
+            var authState = await authStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            string name = user.Identity?.IsAuthenticated == true ? user.Identity.Name : "Guest";
+            _compositeKey = $"{name}_{_tabId}";
+
+            // Register this specific session
+            CounterService.Join(_compositeKey, name);
+            UpdateTooltip();
+
+            // Listen for updates from other users
+            CounterService.OnChange += HandleCounterUpdate;
+
+            EmpName = await SessionStorage.GetItemAsync<string>("EmpName");
+            EmployeeID = await SessionStorage.GetItemAsync<int>("EmployeeID");
+            await LoadPendingApprovalsForEmployeeAsync();
+            await LoadPendingWorkCountAsync();
+            await LoadHoldWorkCountAsync();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error Nav Menu: {ex.Message}");
+        }
+
+    }
+
+    private async Task LoadPendingWorkCountAsync()
+    {
+        pendingWorkCount = await workservice.GetPendingWorkCountAsync();
+        StateHasChanged();
+    }
+
+    private async Task LoadPendingApprovalsForEmployeeAsync()
+    {
+        try
+        {
+            // Fetch pending approvals for the logged-in employee
+            pendingApprovals = await approvalservice.GetPendingApprovalForEmployeeAsync(EmployeeID);
+            pendingApprovalCount = pendingApprovals.Count; // Set the count
+        }
+        catch (Exception ex)
+        {
+            // Log the error
+            Console.WriteLine($"Error loading pending approvals: {ex.Message}");
+            pendingApprovals.Clear(); // Clear the list in case of an error
+            pendingApprovalCount = 0; // Reset the count
+        }
+    }
+    private async Task LoadHoldWorkCountAsync()
+    {
+        holdWorkCount = await approvalservice.GetHoldWorkCountAsync();
+    }
+    private async Task Logout()
+    {
+        var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
+        await customAuthStateProvider.UpdateAuthenticationState(null);
+        navManager.NavigateTo("/", true);
+    }
+    private async Task NavigatetoManagerApproval(int empid)
+    {
+
+    }
+
+    private async void HandleCounterUpdate()
+    {
+        try
+        {
+            UpdateTooltip();
+            await InvokeAsync(StateHasChanged);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in counter update: {ex.Message}");
+        }
+    }
+
+    private void UpdateTooltip()
+    {
+        var list = CounterService.GetUsernamesWithTabCount();
+        _displayUsernames = list.Any() ? string.Join(", ", list) : "No users online";
+    }
+
+    private async Task ToggleFullScreen()
+    {
+        Ismaximized = await JS.InvokeAsync<bool>("toggleFullScreen");
+    }
+
+    public void Dispose()
+    {
+        try
+        {
+            // Unregister and cleanup
+            CounterService.Leave(_compositeKey);
+            CounterService.OnChange -= HandleCounterUpdate;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in dispose: {ex.Message}");
+        }
+        
+    }
+
+}

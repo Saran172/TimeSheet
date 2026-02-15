@@ -1,0 +1,486 @@
+﻿
+.timeco {
+    margin: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 186px;
+    height: 30px;
+}
+
+.timecoo {
+    height: 35px;
+    width: 212px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.speechbtn {
+    border-radius: 20px;
+    color: #ffffff;
+    background: #000000;
+}
+    .speechbtn:active {
+        color: black;
+        background: white;
+    }
+
+.savebtn{
+    color: white;
+    font-weight: 600;
+    background-color: green;
+    border-color: green;
+}
+.savebtn:hover{
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
+.closebtn{
+    color: white;
+    font-weight: 600;
+    background-color: red;
+    border-color: red;
+}
+    .closebtn:hover {
+        color: white;
+        background-color: darkred;
+        border-color: darkred;
+    }
+
+
+
+.modal-content {
+    color: white;
+    font-weight: 600;
+    background: linear-gradient(268deg, #000000 8.51%, #0a2f49 94.76%);
+}
+.modal-title{
+    font-weight: 600;
+}
+
+.time-picker {
+    margin: 5px;
+    font-family: Arial, sans-serif;
+}
+
+    .time-picker label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .time-picker input[type="time"] {
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+        height: 37px;
+    }
+
+        .time-picker input[type="time"]:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+
+
+
+.btn-work{
+    background-color: royalblue;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+/*------------------------------------------footer style------------------------------------------------------------*/
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 20vw;
+    background-color: #000000;
+    text-align: center;
+    max-width: 200px;
+    color: white;
+    padding: 1vh 0.5vw;
+    border-top: 1px solid #dee2e6;
+    border-radius: 20px;
+    transition: opacity 0.5s ease-in, transform 0.5s ease-in;
+    transform: translate(-50%, 20px);
+}
+
+    .footer.visible {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+/* Media Query for Smaller Devices */
+@media (max-width: 768px) {
+    .footer {
+        width: 60vw; /* Adjust width for smaller screens */
+        max-width: 300px; /* Reduce maximum width for smaller screens */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    .footer {
+        width: 80vw; /* Further adjust width for very small screens */
+        max-width: 250px; /* Limit maximum width for mobile devices */
+    }
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+.butcontainer {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.butedit {
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    gap: 10px;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+    .popup-content h3 {
+        margin-top: 0;
+    }
+
+    .popup-content button {
+        margin-top: 20px;
+    }
+
+
+
+
+
+.header-custom-class {
+    background-color: blue; /* Blue background */
+    color: white; /* White text */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text */
+}
+
+
+
+
+/*------------------------------------------------Loading----------------------------------------------------------------*/
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.rl-loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% , -50%);
+}
+
+.loader {
+    width: 40px;
+    height: 20px;
+    --c: no-repeat radial-gradient(farthest-side,#000 93%,#0000);
+    background: var(--c) 0 0, var(--c) 50% 0;
+    background-size: 8px 8px;
+    position: relative;
+    clip-path: inset(-200% -100% 0 0);
+    animation: l6-0 1.5s linear infinite;
+}
+
+    .loader:before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 12px;
+        background: #000;
+        left: -16px;
+        top: 0;
+        animation: l6-1 1.5s linear infinite, l6-2 0.5s cubic-bezier(0,200,.8,200) infinite;
+    }
+
+    .loader:after {
+        content: "";
+        position: absolute;
+        inset: 0 0 auto auto;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #000;
+        animation: l6-3 1.5s linear infinite;
+    }
+
+@keyframes l6-0 {
+    0%,30% {
+        background-position: 0 0,50% 0
+    }
+
+    33% {
+        background-position: 0 100%,50% 0
+    }
+
+    41%,63% {
+        background-position: 0 0,50% 0
+    }
+
+    66% {
+        background-position: 0 0,50% 100%
+    }
+
+    74%,100% {
+        background-position: 0 0,50% 0
+    }
+}
+
+@keyframes l6-1 {
+    90% {
+        transform: translateY(0)
+    }
+
+    95% {
+        transform: translateY(15px)
+    }
+
+    100% {
+        transform: translateY(15px);
+        left: calc(100% - 8px)
+    }
+}
+
+@keyframes l6-2 {
+    100% {
+        top: -0.1px
+    }
+}
+
+@keyframes l6-3 {
+    0%,80%,100% {
+        transform: translate(0)
+    }
+
+    90% {
+        transform: translate(26px)
+    }
+}
+
+/*------------------------------------------------Loading----------------------------------------------------------------*/
+
+
+<!-- HTML ! -->
+<button class="button-49" role="button" > Button 49</button >
+/* CSS */
+.button-49,
+.button-49:after {
+    width: 150px;
+    height: 76px;
+    line-height: 78px;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-49:after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    content: 'ALTERNATE TEXT';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+    0% {
+        clip-path: var(--slice-1);
+        transform: translate(-20px, -10px);
+    }
+
+    10% {
+        clip-path: var(--slice-3);
+        transform: translate(10px, 10px);
+    }
+
+    20% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 10px);
+    }
+
+    30% {
+        clip-path: var(--slice-3);
+        transform: translate(0px, 5px);
+    }
+
+    40% {
+        clip-path: var(--slice-2);
+        transform: translate(-5px, 0px);
+    }
+
+    50% {
+        clip-path: var(--slice-3);
+        transform: translate(5px, 0px);
+    }
+
+    60% {
+        clip-path: var(--slice-4);
+        transform: translate(5px, 10px);
+    }
+
+    70% {
+        clip-path: var(--slice-2);
+        transform: translate(-10px, 10px);
+    }
+
+    80% {
+        clip-path: var(--slice-5);
+        transform: translate(20px, -10px);
+    }
+
+    90% {
+        clip-path: var(--slice-1);
+        transform: translate(-10px, 0px);
+    }
+
+    100% {
+        clip-path: var(--slice-1);
+        transform: translate(0);
+    }
+}
+.addworkbtn-sm {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .button-49,
+    .button-49:after {
+        width: 200px;
+        height: 86px;
+        line-height: 88px;
+    }
+}
+
+
+@media (max-width:390px){
+    .time-picker input[type="time"] {
+        padding: 13px;
+        width: 111%;
+        font-size: 14px !important;
+    }
+}
+
+
+@media (max-width:500px){
+/*    .modal-body{
+        background-color:#b1f1be ;
+    }*/
+    .resinput-field{
+        flex-direction:column;
+    }
+    .addworkbtn-lg{
+        display:none;
+    }
+    .addworkbtn-sm{
+        display:block;
+        height:30px;
+        border:none;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .addworkbtn-sm img{
+        width:30px;
+        height:30px;
+       
+    }
+    .toolbar {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .timecoo{
+        width: 100%;
+    }
+    .modal-content{
+        width: 85%;
+        transform: translate(10%, 0%);
+    }
+    .time-picker input[type="time"]{
+        padding: 13px;
+        width: 111%;
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+

@@ -1,0 +1,73 @@
+﻿@page "/employeeRep/{id:int}"
+@attribute [Authorize(Roles = "manager, Developer")]
+
+@inject WorkService workService
+<div class="models">
+    <div class="toolbar">
+        <div class="toolbar-group">
+            <div class="grid-toolbar-export">
+                Export
+                <div class="export-options">
+                    <button class="btn btn-primary" @onclick="ExportCsvItem_Click">To CSV</button>
+                    <button class="btn btn-primary" @onclick="ExportXlsxItem_Click">To XLSX</button>
+                    <button class="btn btn-primary" @onclick="ExportXlsItem_Click">To XLS</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="grid-container">
+        <label for="deOverview" class="demo-text cw-320 mb-1">
+            Work Date :
+        </label>
+        <label for="deOverview" class="demo-text cw-320 mb-1">From</label>
+        <DxDateEdit @bind-Date="@DateTimeStart"
+                    CssClass="cw-320" class="date"
+                    InputId="deOverview" />
+        <label for ="deOverview" class="demo-text cw-320 mb-1">To</label>
+        <DxDateEdit @bind-Date="@DateTimeEnd"
+                    CssClass="cw-320" class="date"
+                    InputId="deOverview" />
+        <DxButton Click="@(() => UpdateGrid(DateTimeStart,DateTimeEnd))">Update Grid</DxButton>
+        <hr />
+        <DxGrid @ref="Grid" Data="work"
+        FilterMenuButtonDisplayMode="GridFilterMenuButtonDisplayMode.Always"
+        ColumnResizeMode="GridColumnResizeMode.NextColumn"
+        TextWrapEnabled="false"
+        VirtualScrollingEnabled="true">
+        <Columns>
+                @* <DxGridDataColumn FieldName="WORK_ID" Width="140px" /> *@
+                <DxGridDataColumn FieldName="WORK_DATE" Caption="Work Date" Width="140px" />
+                <DxGridDataColumn FieldName="EMP_NAME" Caption="Employee Name" MinWidth="50" />
+                <DxGridDataColumn FieldName="CUST_NAME" Caption="Customer Name" Width="130px">
+               @*  <EditSettings>
+                    <DxComboBoxSettings Data="Categories" ValueFieldName="Cust_Id" TextFieldName="CategoryName" />
+                </EditSettings> *@
+            </DxGridDataColumn>
+                <DxGridDataColumn FieldName="PROJ_NAME" Caption="Project Name" Width="130px">
+@*                 <EditSettings>
+                    <DxComboBoxSettings Data="Categories" ValueFieldName="Proj_Id" TextFieldName="CategoryName" />
+                </EditSettings> *@
+            </DxGridDataColumn>
+                <DxGridDataColumn FieldName="WORK_DESCRIPTIONS" Caption="Description" MinWidth="100" />
+                <DxGridDataColumn FieldName="START_TIME" Caption="Start Time" Width="8%" MinWidth="50" DisplayFormat="HH:mm:ss" />
+                <DxGridDataColumn FieldName="END_TIME" Caption="End Time" Width="8%" MinWidth="50" DisplayFormat="HH:mm:ss" />
+                <DxGridDataColumn FieldName="TOTAL_HOURS" Caption="Total Minutes" Width="5%" MinWidth="50" DisplayFormat="HH:mm:ss" />
+
+
+                <DxGridDataColumn FieldName="MANAGER_NAME" Caption="Manager Name" MinWidth="50" />
+                <DxGridDataColumn FieldName="MANAGER_APPROVAL" Caption="Manager Approval" MinWidth="50" />
+                <DxGridDataColumn FieldName="Comment" Caption="Manager Remarks" MinWidth="50" />
+        </Columns>
+    </DxGrid>
+</div>
+
+</div>
+
+<footer class="footer">
+    <p>Work Details</p>
+</footer>
+
+@code {
+   
+}

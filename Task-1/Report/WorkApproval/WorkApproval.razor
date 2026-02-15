@@ -1,0 +1,237 @@
+﻿@page "/workap"
+@attribute [Authorize(Roles = "manager, Developer")]
+@using System.Globalization
+@using Microsoft.EntityFrameworkCore
+@using Syncfusion.Blazor.Calendars
+@using Task_1.DbCon
+@using Task_1.Entities
+@using Task_1.Model
+@using Task_1.Services
+@inject ApprovalService approvalservice
+@inject Blazored.SessionStorage.ISessionStorageService SessionStorage
+@inject IJSRuntime JSRuntime
+@inject WorkService workservice
+@inject CustomerDbContext _context
+
+
+
+    @if (isLoading)
+    {
+    <div class="rl-loading-container">
+        <div class="loader"></div>
+    </div>
+    }
+    else
+    {   
+        <div class="models">
+            <DxGrid @ref="Grid"
+                    Data="Data"
+                    PageSize="20"
+                    ShowSearchBox="true"
+                    CustomizeElement="Grid_CustomizeElement"
+                    KeyboardNavigationEnabled="Params.KeyboardNavigationEnabled">
+                <Columns>
+
+                <DxGridDataColumn FieldName="Work_Date" Caption="Work Date" Width="5%" MinWidth="30" DisplayFormat="yyyy-MM-dd" />
+                <DxGridDataColumn FieldName="Emp_Name" Caption="Employee Name" MinWidth="50" />
+                <DxGridDataColumn FieldName="Cust_Name" Caption="Customer" MinWidth="50" />
+                <DxGridDataColumn FieldName="Proj_Name" Caption="Project" MinWidth="50" />
+                <DxGridDataColumn FieldName="Work_Descriptions" Caption="Description" MinWidth="50" />
+                <DxGridDataColumn FieldName="Approval_Status" Caption="Approval Status" MinWidth="50" />
+                <DxGridDataColumn FieldName="Comment" Caption="Comment" MinWidth="50" />
+                <DxGridDataColumn FieldName="Correction" Caption="Changes" MinWidth="50" />
+                <DxGridDataColumn FieldName="Approval_Date" Caption="Approval Date" MinWidth="50" />
+
+                <DxGridDataColumn FieldName="Work_Id" Caption="Action" AllowSort="false" width="100px" MinWidth="260" TextAlignment="GridTextAlignment.Center">
+
+                    <CellDisplayTemplate>
+                        <button class="btn btn-dark btn-sm sty1" data-bs-toggle="modal" data-bs-target="#exampleModal" @onclick="() => PrepareAction((int)context.Value, 1)">Approve</button>
+                        <button class="btn btn-danger btn-sm sty1" data-bs-toggle="modal" data-bs-target="#exampleModal" @onclick="() => PrepareAction((int)context.Value, 2)">Reject</button>
+                    </CellDisplayTemplate>
+                </DxGridDataColumn>
+
+                @* <DxGridDataColumn FieldName="Work_Id" Caption="Action" AllowSort="false" width="100px" MinWidth="260" TextAlignment="GridTextAlignment.Center">
+
+                        <CellDisplayTemplate>
+                        
+                        </CellDisplayTemplate>
+                    </DxGridDataColumn> *@
+
+                </Columns>
+            </DxGrid>
+        </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Remark</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Work Description:</label>
+                        <textarea class="form-control" @bind="Work_Descriptions" readonly></textarea>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Changes:</label>
+                        <textarea class="form-control" @bind="Correction" readonly></textarea>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text" @bind="Comment"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick="()=>SubmitAction()">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
+
+<footer class="footer">
+    <p>Work Approval</p>
+</footer>
+
+@code{
+    private bool isLoading = true;
+    WorkApprovalDTO[] Data { get; set; }
+    IGrid Grid { get; set; }
+    public string ManagerName { get; set; }
+    public string? Comment { get; set; }
+    public int Work_Id { get; set; }
+    public int action { get; set; }
+    private int EmployeeID { get; set; }
+    public string? Correction { get; set; }
+    public string Work_Descriptions { get; set; }
+    private int holdWorkCount;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(2000);
+        isLoading = false;
+        await LoadHoldWorkCountAsync();
+        ManagerName = await SessionStorage.GetItemAsync<string>("ManagerName");
+        await LoadGridDataAsync();
+    }
+
+    async Task LoadGridDataAsync()
+    {
+        try
+        {
+            var data = await approvalservice.LoadWorkApproval();
+            Data = data.ToArray();
+        }
+        catch(Exception ex)
+        {
+
+        }
+
+        // if (ManagerName == "Ramesh")
+        // {
+        //     var data = await approvalservice.GetWorkApproval();
+        //     Data = data.ToArray();
+
+
+        // }
+
+        // else
+        // {
+        //     var data = await approvalservice.GetWorkApproval();
+        //     Data = data.ToArray();
+
+        //     }
+
+    }
+
+    protected async  void PrepareAction(int id, int actionType)
+    {   
+
+        var wor = await _context.Work.FindAsync(id);
+        Work_Id = id;
+        action = actionType;
+        Work_Descriptions = wor.Work_Descriptions;
+        Correction = wor.Correction;
+    }
+    private async Task SubmitAction()
+    {
+
+        switch (action)
+        {
+            case 1:
+                await Accept(Work_Id);
+                break;
+            case 2:
+                await Reject(Work_Id);
+                break;
+        }
+        try
+        {
+            action = 0;
+            Comment = string.Empty;
+        }
+        catch (Exception ex)
+        {
+
+        }
+
+    }
+    protected async Task Accept(int id)
+    {
+        var wor = await _context.Work.FindAsync(id);
+        wor.Manager_Id = EmployeeID;
+        wor.Manager_Name = ManagerName;
+        wor.Manager_Approval = "Approved";
+        wor.Comment = Comment;
+
+        await workservice.UpdateWorkAsync(wor);
+        await LoadGridDataAsync();
+        workservice.Updateworkinapproval(wor);
+        StateHasChanged();
+        await JSRuntime.InvokeVoidAsync("sweetAlertInterop.showSuccess", "Success", "Approved successfully");
+        Grid.Reload();
+    }
+    protected async Task Reject(int id)
+    {
+        var wor = await _context.Work.FindAsync(id);
+        wor.Manager_Id = EmployeeID;
+        wor.Manager_Name = ManagerName;
+        wor.Manager_Approval = "Reject";
+        wor.Comment = Comment;
+
+        await workservice.UpdateWorkAsync(wor);
+        await LoadGridDataAsync();
+        workservice.Updateworkinapproval(wor);
+        StateHasChanged();
+        await JSRuntime.InvokeVoidAsync("sweetAlertInterop.showError", "Reject", "Rejected successfully");
+        Grid.Reload();
+
+    }
+
+    private async Task LoadHoldWorkCountAsync()
+    {
+        holdWorkCount = await approvalservice.GetHoldWorkCountAsync();
+    }
+    
+        void Grid_CustomizeElement(GridCustomizeElementEventArgs e)
+        {
+            if (e.ElementType == GridElementType.DataRow && e.VisibleIndex % 2 == 1)
+            {
+                e.CssClass = "alt-item";
+            }
+            if (e.ElementType == GridElementType.HeaderCell)
+            {
+                e.Style = "background-color: rgba(0, 0, 0, 0.08)";
+                e.CssClass = "header-bold";
+            }
+        }
+
+    
+    }

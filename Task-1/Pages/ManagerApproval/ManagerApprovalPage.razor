@@ -1,0 +1,221 @@
+﻿@page "/ManagerApproval"
+@attribute [Authorize(Roles = "manager, Developer")]
+@using System.Globalization
+@using Microsoft.EntityFrameworkCore
+@using Syncfusion.Blazor.Calendars
+@using Task_1.Authentication
+@using Task_1.DbCon
+@using Task_1.Model
+@using Task_1.Services
+@inject EmployeeService employeeservice
+@inject UserAccountService useracc
+@inject CustomerService custserverice
+@inject ProjectService projectservice
+@inject WorkService workservice
+@inject CustomerDbContext _context
+@inject DataAcces _data
+@inject Blazored.SessionStorage.ISessionStorageService SessionStorage
+@inject IJSRuntime JSRuntime
+
+@if (isLoading)
+{
+    <div class="rl-loading-container">
+        <div class="loader"></div>
+    </div>
+}
+else
+{   
+    
+    <div class="models">
+        
+        <label for="deOverview" class="demo-text cw-320 mb-1">
+            From Date
+        </label>
+        <DxDateEdit @bind-Date="@DateStartTimeValue"
+                    CssClass="cw-320" class="date"
+                    InputId="deOverview" />
+        <label for="deOverview" class="demo-text cw-320 mb-1">
+            End Date
+        </label>
+        <DxDateEdit @bind-Date="@DateEndTimeValue"
+                    CssClass="cw-320" class="date"
+                    InputId="deOverview" />
+
+        <DxButton Click="@(() => UpdateGrid(DateStartTimeValue,DateEndTimeValue))">Show</DxButton>
+
+
+        <div class="toolbar">
+            <div class="toolbar-group">
+                <div class="grid-toolbar-export">
+                    Export
+                    <div class="export-options">
+                        <button class="btn btn-primary" @onclick="ExportCsvItem_Click">To CSV</button>
+                        <button class="btn btn-primary" @onclick="ExportXlsxItem_Click">To XLSX</button>
+                        <button class="btn btn-primary" @onclick="ExportXlsItem_Click">To XLS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <DxGrid @ref="Grid"
+             ShowGroupPanel="true"
+                Data="Data"
+                PageSize="10"
+                ShowSearchBox="true" 
+                CustomizeElement="Grid_CustomizeElement"
+                KeyboardNavigationEnabled="Params.KeyboardNavigationEnabled">
+            <Columns>
+                <DxGridDataColumn FieldName="Work_Date" Caption="Work Date" Width="5%" MinWidth="30" DisplayFormat="yyyy-MM-dd" />
+                <DxGridDataColumn FieldName="Emp_Name" Caption="Name" Width="6%" MinWidth="50" />
+                <DxGridDataColumn FieldName="Cust_Name" Caption="Cust Name" MinWidth="50" />
+                <DxGridDataColumn FieldName="Proj_Name" Caption="Project Name" MinWidth="50" />
+                <DxGridDataColumn FieldName="Ticket_Number" Caption="Ticket Number" MinWidth="50" />
+                <DxGridDataColumn FieldName="Work_Descriptions" Caption="Description" Width="10%" MinWidth="50" />
+                <DxGridDataColumn FieldName="Start_Time" Caption="Start Time" Width="5%" MinWidth="50" DisplayFormat="HH:mm:ss" />
+                <DxGridDataColumn FieldName="End_Time" Caption="End Time" Width="5%" MinWidth="50" DisplayFormat="HH:mm:ss" />
+                <DxGridDataColumn FieldName="Total_Hours" Caption="Total Hours" Width="5%" MinWidth="50" />
+                <DxGridDataColumn FieldName="Manager_Name" Caption="Manager Name" MinWidth="50" />
+                <DxGridDataColumn FieldName="Manager_Approval" Caption="Manager Approval" MinWidth="50" />
+                <DxGridDataColumn FieldName="Comment" Caption="Manager Remarks" MinWidth="50" />
+                <DxGridDataColumn FieldName="Correction" Caption="Changes" MinWidth="50" />
+
+
+                <DxGridDataColumn FieldName="Work_Id" Caption="Action" AllowSort="false" Width="250" TextAlignment="GridTextAlignment.Center">
+
+                    <CellDisplayTemplate>
+                        <button class="btn btn-info custom-button sty1" data-bs-toggle="modal" data-bs-target="#detailsModal" @onclick="() => ShowDetails((int)context.Value)">...</button>
+                        <button class="btn btn-success btn-sm sty1" @onclick="() => PrepareAction((int)context.Value, 1)">Approve</button>
+                        <button class="btn btn-primary btn-sm sty1" data-bs-toggle="modal" data-bs-target="#exampleModal" @onclick="() => PrepareAction((int)context.Value, 2)">Hold</button>
+                        <button class="btn btn-danger btn-sm sty1" data-bs-toggle="modal" data-bs-target="#exampleModal" @onclick="() => PrepareAction((int)context.Value, 3)">Reject</button>
+                    </CellDisplayTemplate>
+                </DxGridDataColumn>
+
+            </Columns>
+        </DxGrid>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Remark</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                        <h6>Work Description:</h6>
+                        <p>@Work_Descriptions</p>
+                </div>
+                @if(action >= 2 )
+                {
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <h6>Remarks</h6>
+                                <textarea class="form-control" id="message-text" @bind="Comment"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                }
+                
+                @if( action == 1)
+                {
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick="()=>SubmitAction()">Save</button>
+                    </div>
+                }
+                else
+                {
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" @onclick="()=>SubmitAction()">Send</button>
+                    </div>
+                }
+                
+            </div>
+        </div>
+    </div>
+}
+
+<div class="modal fade" id="exampleModal1" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="exampleModalLabel">Update Work Status</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label class="col-form-label"> Manager ID:</label>
+                    <input type="text" class="form-control" @bind-value="Manager_Id" />
+                </div>
+                <div class="mb-3">
+                    <label class="col-form-label"> Manager Name:</label>
+                    <input type="text" class="form-control" @bind-value="Manager_Name" />
+                </div>
+                <div class="mb-3">
+                    <label class="col-form-label"> Manager Approval:</label>
+
+                    <InputSelect id="project" @bind-Value="Manager_Approval" class="form-control">
+                        <option value="select">----select----</option>
+                        <option value="Approved">Approved</option>
+                        <option value="Not Approved">Not Approved</option>
+                        <option value="Rejected">Rejected</option>
+
+                    </InputSelect>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" @onclick="()=>EditItem()">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="detailsModal" tabindex="-1" aria-labelledby="detailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="detailsModalLabel">Work Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <h6>Employee Name:</h6>
+                    <p>@Emp_Name</p>
+                    <h6>Description:</h6>
+                    <p>@Work_Descriptions</p>
+                    <h6>Customer Name:</h6>
+                    <p>@Cust_Name</p>
+                    <h6>Project Name:</h6>
+                    <p>@Proj_Name</p>
+                    <h6>Start Time:</h6>
+                    <p>@Start_Time.ToString("HH:mm:ss")</p>
+                    <h6>End Time:</h6>
+                    <p>@End_Time.ToString("HH:mm:ss")</p>
+                    <h6>Total Hours:</h6>
+                    <p>@Total_Hours</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<footer class="footer">
+    <p>Manager Approval</p>
+</footer>
+
+
+@code {
+
+}
+

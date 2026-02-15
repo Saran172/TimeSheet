@@ -1,0 +1,111 @@
+﻿@page "/dailySheet"
+@inject IJSRuntime Jsruntime
+@using Microsoft.EntityFrameworkCore;
+@using Task_1.Authentication
+@using Task_1.DbCon
+@using Task_1.Entities
+@attribute [Authorize(Roles = "manager, Developer")]
+
+@inject WorkService workService
+@inject EditStateService EditStateService
+@inject CustomAuthenticationStateProvider CustomAuthenticationStateProvider
+@inject CustomerDbContext _context
+
+
+@if (isLoading)
+{
+    <div class="rl-loading-container">
+        <div class="loader"></div>
+    </div>
+}
+else
+{
+    <div class="models">
+        <div class="toolbar">
+            <div class="toolbar-group">
+                <div class="grid-toolbar-export">
+                    Export
+                    <div class="export-options">
+                        <button class="btn btn-primary" @onclick="ExportCsvItem_Click">To CSV</button>
+                        <button class="btn btn-primary" @onclick="ExportXlsxItem_Click">To XLSX</button>
+                        <button class="btn btn-primary" @onclick="ExportXlsItem_Click">To XLS</button>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar-group">
+                    Allow employees to add work for previous date :
+                    <div class="butedit">
+                        @if (isManager)
+                        {
+                            <button type="button" class="btn btn-warning" @onclick="ToggleEditability">
+                                @if (EditStateService.IsEditable)
+                                {
+                                    <span>Deny</span>
+                                }
+                                else
+                                {
+                                    <span>Allow</span>
+                                }
+                            </button>
+                        }
+                    </div>
+            </div>
+        </div>
+       
+        <hr />
+        <div class="grid-container">
+            <label for="deOverview" class="demo-text cw-320 mb-1">
+                Work Date :
+            </label>
+
+            <label for="deOverview" class="demo-text cw-320 mb-1">From</label>
+            <DxDateEdit @bind-Date="@DateTimeStart" CssClass="cw-320" class="date" InputId="deOverview" />
+
+            <label for ="deOverview" class="demo-text cw-320 mb-1">To</label>
+            <DxDateEdit @bind-Date="@DateTimeEnd" CssClass="cw-320" class="date" InputId="deOverview" />
+            <DxButton Click="@(() => UpdateGrid(DateTimeStart,DateTimeEnd))">Update Grid</DxButton>
+            <hr />
+
+            <DxGrid @ref="Grid"
+                Data="work"
+                PageSize="10"
+                ShowSearchBox="true"
+                ColumnResizeMode="GridColumnResizeMode.NextColumn"
+                TextWrapEnabled="false">
+                    <Columns>
+                        <DxGridDataColumn FieldName="WORK_DATE" Caption="Work Date" Width="10%" SortIndex="0" SortOrder="GridColumnSortOrder.Ascending"/>
+                        <DxGridDataColumn FieldName="CREATED_DATETIME" Caption="Entry Date" Width="10%" />
+                        <DxGridDataColumn FieldName="TaskStatus" Caption="Work Type" Width="10%" />
+                        <DxGridDataColumn FieldName="So_Number" Caption="So Number" Width="10%" DisplayFormat="d"/>
+                        <DxGridDataColumn FieldName="IsBillable" Caption="Bill Status" Width="10%" TextAlignment="GridTextAlignment.Center" />
+                        <DxGridDataColumn FieldName="@nameof(WorkProjdto.EMP_NAME)" Caption="Employee Name" Width="10%" />
+                        <DxGridDataColumn FieldName="TICKET_NUMBER" Caption="Ticket Number" Width="10%" />
+                        <DxGridDataColumn FieldName="CUST_NAME" Caption="Customer Name" Width="10%" />
+                        <DxGridDataColumn FieldName="@nameof(WorkProjdto.PROJ_NAME)" Caption="Project Name" Width="10%" />
+                        <DxGridDataColumn FieldName="WORK_DESCRIPTIONS" Caption="Description" Width="60%" />
+                        <DxGridDataColumn FieldName="START_TIME" Caption="Start Time" Width="10%" DisplayFormat="HH:mm:ss" />
+                        <DxGridDataColumn FieldName="END_TIME" Caption="End Time"  Width="10%" DisplayFormat="HH:mm:ss" />
+                        <DxGridDataColumn FieldName="TOTAL_HOURS" Caption="Total Minutes" Width="10%" DisplayFormat="HH:mm:ss" />
+                    </Columns>
+            </DxGrid>
+        </div>
+
+    </div>
+
+    
+
+    
+}
+
+
+<footer class="footer">
+    <p>DailySheet Report</p>
+</footer>
+
+
+
+
+@code {
+
+    
+}

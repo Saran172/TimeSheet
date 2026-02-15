@@ -1,0 +1,55 @@
+﻿@page "/custreport"
+@attribute [Authorize(Roles = "manager, Developer")]
+@using Task_1.Model
+@using Task_1.Services
+@inject CustomerService IssuesDataService
+
+@if (isLoading)
+{
+    <div class="rl-loading-container">
+        <div class="loader"></div>
+    </div>
+}
+else
+{
+    <div class="models">
+        <div class="toolbar">
+            <div class="toolbar-group">
+                <div class="grid-toolbar-export">
+                    Export
+                    <div class="export-options">
+                        <button class="btn btn-primary" @onclick="ExportCsvItem_Click">To CSV</button>
+                        <button class="btn btn-primary" @onclick="ExportXlsxItem_Click">To XLSX</button>
+                        <button class="btn btn-primary" @onclick="ExportXlsItem_Click">To XLS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="grid-container">
+
+            <DxGrid @ref="Grid" Data="DataSource" PageSize="15"
+                    ColumnResizeMode="GridColumnResizeMode.NextColumn" TextWrapEnabled="false">
+                <Columns>
+                   
+                  @*<DxGridDataColumn FieldName="Cust_Id" Caption="Cust_Id" MinWidth="100" /> *@
+                    <DxGridDataColumn FieldName="Cust_Code" Caption="Cust Code" MinWidth="10    " />
+                    <DxGridDataColumn FieldName="Cust_Name" Caption="Customer Name" DisplayFormat="c" Width="40%" TextAlignment="GridTextAlignment.Center" />
+                    <DxGridDataColumn FieldName="Cust_ContactNo" Caption="Contact Number" Width="10%" />
+                    <DxGridDataColumn FieldName="Cust_Email" Caption="Email Address" Width="15%" MinWidth="80" />
+
+                </Columns>
+
+            </DxGrid>
+        </div>
+    </div>
+}
+
+
+<footer class="footer">
+    <p>Customer Report</p>
+</footer>
+@code {
+   
+}
+
